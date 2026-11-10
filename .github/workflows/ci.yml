@@ -11,6 +11,6 @@ jobs:
       - name: Install tools
         run: sudo apt-get update && sudo apt-get install -y luajit luarocks lua-cjson && sudo luarocks install luacheck
       - name: luacheck + pure tests
-        run: ./dev.sh check
+        run: bash ./dev.sh check
       - name: Package (zip + SHA256SUMS)
-        run: SKIP_CHECK=1 ./empaquetar.sh
+        run: SKIP_CHECK=1 bash ./empaquetar.sh

@@ -16,7 +16,7 @@ jobs:
           VERSION="$(sed -n 's/^return "\(.*\)"$/\1/p' dndsheet/version.lua)"
           [ "v$VERSION" = "${GITHUB_REF_NAME%%-rc*}" ] || { echo "tag $GITHUB_REF_NAME != version $VERSION"; exit 1; }
       - name: Build
-        run: ./empaquetar.sh
+        run: bash ./empaquetar.sh
       - name: Release notes from CHANGELOG
         run: |
           VERSION="$(sed -n 's/^return "\(.*\)"$/\1/p' dndsheet/version.lua)"
