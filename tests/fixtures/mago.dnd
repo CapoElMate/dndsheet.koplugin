@@ -1,0 +1,254 @@
+{
+  "meta": {
+    "schema": 1,
+    "app": "dndsheet",
+    "creado": 1762450000,
+    "guardado": 1762450000
+  },
+  "nombre": "Merlana",
+  "clase_nivel": "Maga 5",
+  "nivel": 5,
+  "trasfondo": "Criminal",
+  "jugador": "Alex",
+  "raza": "Mediana piesligeros",
+  "alineamiento": "Caótica neutral",
+  "experiencia": 6500,
+  "atributos": {
+    "fue": 8,
+    "des": 14,
+    "con": 14,
+    "int": 18,
+    "sab": 12,
+    "car": 10
+  },
+  "salvaciones": {
+    "fue": false,
+    "des": false,
+    "con": false,
+    "int": true,
+    "sab": true,
+    "car": false
+  },
+  "habilidades": {
+    "acrobacias": 1,
+    "trato_animales": 0,
+    "arcanos": 0,
+    "atletismo": 0,
+    "engano": 2,
+    "historia": 0,
+    "perspicacia": 0,
+    "intimidacion": 0,
+    "investigacion": 1,
+    "medicina": 0,
+    "naturaleza": 0,
+    "percepcion": 1,
+    "interpretacion": 0,
+    "persuasion": 0,
+    "religion": 0,
+    "juego_manos": 1,
+    "sigilo": 2,
+    "supervivencia": 0
+  },
+  "inspiracion": true,
+  "ca": 15,
+  "velocidad": "7,5 m",
+  "hp": {
+    "maximo": 38,
+    "actual": 27,
+    "temporal": 5
+  },
+  "dados_golpe": {
+    "total": "5d8",
+    "restantes": 3
+  },
+  "muerte": {
+    "exitos": 0,
+    "fallos": 0
+  },
+  "ajustes": {
+    "competencia": null,
+    "iniciativa": null,
+    "percepcion_pasiva": null,
+    "cd_conjuros": null,
+    "ataque_conjuros": null
+  },
+  "ataques": [
+    {
+      "nombre": "Estoque",
+      "bonus": "+7",
+      "dano": "1d8+4 perforante"
+    },
+    {
+      "nombre": "Arco corto",
+      "bonus": "+7",
+      "dano": "1d6+4 perforante"
+    },
+    {
+      "nombre": "Daga",
+      "bonus": "+7",
+      "dano": "1d4+4 perforante"
+    }
+  ],
+  "ataques_notas": "Ataque furtivo: +3d6 una vez por turno con ventaja o aliado adyacente.\nAcción astuta: correr, destrabarse o esconderse como acción adicional.",
+  "monedas": {
+    "pc": 12,
+    "pp": 25,
+    "pe": 0,
+    "po": 112,
+    "ppt": 0
+  },
+  "equipo": "Armadura de cuero tachonado\nHerramientas de ladrón\nCapa con capucha\nCuerda de seda (15 m)\nRaciones (5 días)\nPalanca",
+  "otras_competencias": "Armaduras ligeras; armas sencillas, ballestas de mano, espadas largas, estoques, espadas cortas.\nHerramientas de ladrón, dados.\nIdiomas: común, mediano, jerga de ladrones, élfico.",
+  "rasgos": "Pericia (Sigilo, Engaño)\nAtaque furtivo (3d6)\nJerga de ladrones\nAcción astuta\nPrestidigitación con mano de mago\nEsquiva asombrosa\nSuerte (mediana)\nValiente\nAgilidad mediana\nSigilo natural",
+  "personalidad": {
+    "rasgos": "Siempre tengo un plan de escape.",
+    "ideales": "Libertad. Las cadenas están para romperse.",
+    "vinculos": "Le debo la vida a Varo, mi antiguo jefe de banda.",
+    "defectos": "Si veo algo valioso, me cuesta no tomarlo."
+  },
+  "fisico": {
+    "edad": "24",
+    "altura": "0,9 m",
+    "peso": "18 kg",
+    "ojos": "Verdes",
+    "piel": "Clara",
+    "pelo": "Castaño, trenzado"
+  },
+  "apariencia": "Pequeña, ágil, con una cicatriz en la ceja izquierda. Viste ropa oscura con muchos bolsillos.",
+  "aliados": "Gremio de las Manos Grises (contactos en el puerto).\nVaro, perista en Aguasprofundas.",
+  "organizacion": "Manos Grises",
+  "rasgos_adicionales": "",
+  "historia": "Creció en los muelles robando para sobrevivir. El gremio la entrenó, pero un golpe salió mal y tuvo que huir de la ciudad...",
+  "tesoro": "Anillo de plata con un sello desconocido.",
+  "conjuros": {
+    "clase": "Maga",
+    "aptitud": "int",
+    "niveles": {
+      "0": {
+        "lista": [
+          {
+            "nombre": "Mano de mago"
+          },
+          {
+            "nombre": "Luz"
+          },
+          {
+            "nombre": "Rayo de escarcha"
+          },
+          {
+            "nombre": "Prestidigitación"
+          }
+        ]
+      },
+      "1": {
+        "total": 4,
+        "usados": 1,
+        "lista": [
+          {
+            "nombre": "Proyectil mágico",
+            "preparado": true
+          },
+          {
+            "nombre": "Escudo",
+            "preparado": false
+          },
+          {
+            "nombre": "Detectar magia",
+            "preparado": true
+          },
+          {
+            "nombre": "Dormir",
+            "preparado": false
+          },
+          {
+            "nombre": "Armadura de mago",
+            "preparado": true
+          },
+          {
+            "nombre": "Sirviente invisible",
+            "preparado": false
+          }
+        ]
+      },
+      "2": {
+        "total": 3,
+        "usados": 0,
+        "lista": [
+          {
+            "nombre": "Paso brumoso",
+            "preparado": true
+          },
+          {
+            "nombre": "Imagen múltiple",
+            "preparado": false
+          },
+          {
+            "nombre": "Invisibilidad",
+            "preparado": true
+          },
+          {
+            "nombre": "Telaraña",
+            "preparado": false
+          },
+          {
+            "nombre": "Rayo abrasador",
+            "preparado": true
+          }
+        ]
+      },
+      "3": {
+        "total": 2,
+        "usados": 0,
+        "lista": [
+          {
+            "nombre": "Bola de fuego",
+            "preparado": true
+          },
+          {
+            "nombre": "Contrahechizo",
+            "preparado": false
+          },
+          {
+            "nombre": "Volar",
+            "preparado": true
+          },
+          {
+            "nombre": "Relámpago",
+            "preparado": false
+          }
+        ]
+      },
+      "4": {
+        "total": 0,
+        "usados": 0,
+        "lista": []
+      },
+      "5": {
+        "total": 0,
+        "usados": 0,
+        "lista": []
+      },
+      "6": {
+        "total": 0,
+        "usados": 0,
+        "lista": []
+      },
+      "7": {
+        "total": 0,
+        "usados": 0,
+        "lista": []
+      },
+      "8": {
+        "total": 0,
+        "usados": 0,
+        "lista": []
+      },
+      "9": {
+        "total": 0,
+        "usados": 0,
+        "lista": []
+      }
+    }
+  },
+  "notas": "Sesión 12: el posadero mintió sobre el carro.\n- Deuda con Varo: 50 po\n- Pista: símbolo del ojo en el puerto\n\nPendiente: preguntar al DM por el anillo."
+}

@@ -1,0 +1,11 @@
+{
+ "spells": [
+  { "id": "custom.ember-lash", "name": "Ember Lash", "level": 1, "school": "Evocation", "casting_time": "Action",
+    "range": "30 feet", "components": "V, S", "duration": "Instantaneous", "ritual": false, "concentration": false,
+    "classes": ["Wizard"], "text": "Un látigo de brasas (texto inventado para las pruebas).", "higher_levels": null }
+ ],
+ "feats": [
+  { "id": "custom.example-feat", "name": "Ejemplo de Dote", "category": "general", "prerequisite": null,
+    "text": "Dote inventada para las pruebas." }
+ ]
+}

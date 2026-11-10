@@ -1,0 +1,202 @@
+{
+    "ataques_notas": "Ataque furtivo: +3d6 una vez por turno con ventaja o aliado adyacente.\nAcción astuta: correr, destrabarse o esconderse como acción adicional.",
+    "meta": {
+        "app": "dndsheet",
+        "guardado": 1794331034,
+        "schema": 3,
+        "creado": 1762450000
+    },
+    "equipo": "Armadura de cuero tachonado\nHerramientas de ladrón\nCapa con capucha\nCuerda de seda (15 m)\nRaciones (5 días)\nPalanca",
+    "otras_competencias": "Armaduras ligeras; armas sencillas, ballestas de mano, espadas largas, estoques, espadas cortas.\nHerramientas de ladrón, dados.\nIdiomas: común, mediano, jerga de ladrones, élfico.",
+    "rasgos": "Pericia (Sigilo, Engaño)\nAtaque furtivo (3d6)\nJerga de ladrones\nAcción astuta\nPrestidigitación con mano de mago\nEsquiva asombrosa\nSuerte (mediana)\nValiente\nAgilidad mediana\nSigilo natural",
+    "rasgos_ref": [],
+    "personalidad": {
+        "ideales": "Libertad. Las cadenas están para romperse.",
+        "rasgos": "Siempre tengo un plan de escape.",
+        "defectos": "Si veo algo valioso, me cuesta no tomarlo.",
+        "vinculos": "Le debo la vida a Varo, mi antiguo jefe de banda."
+    },
+    "nombre": "Thalia Pieligera",
+    "ca": 15,
+    "fisico": {
+        "piel": "Clara",
+        "pelo": "Castaño, trenzado",
+        "edad": "24",
+        "altura": "0,9 m",
+        "peso": "18 kg",
+        "ojos": "Verdes"
+    },
+    "hp": {
+        "maximo": 38,
+        "actual": 24,
+        "temporal": 0
+    },
+    "apariencia": "Pequeña, ágil, con una cicatriz en la ceja izquierda. Viste ropa oscura con muchos bolsillos.",
+    "historia": "Creció en los muelles robando para sobrevivir. El gremio la entrenó, pero un golpe salió mal y tuvo que huir de la ciudad...",
+    "organizacion": "Manos Grises",
+    "rasgos_adicionales": "",
+    "tesoro": "Anillo de plata con un sello desconocido.",
+    "clase_nivel": "Pícara 5 (Embaucadora arcana)",
+    "ataques": [
+        {
+            "nombre": "Estoque",
+            "dano": "1d8+4 perforante",
+            "bonus": "+7"
+        },
+        {
+            "nombre": "Arco corto",
+            "dano": "1d6+4 perforante",
+            "bonus": "+7"
+        },
+        {
+            "nombre": "Daga",
+            "dano": "1d4+4 perforante",
+            "bonus": "+7"
+        }
+    ],
+    "notas": "Sesión 12: el posadero mintió sobre el carro.\n- Deuda con Varo: 50 po\n- Pista: símbolo del ojo en el puerto\n\nPendiente: preguntar al DM por el anillo.",
+    "atributos": {
+        "fue": 8,
+        "des": 18,
+        "con": 14,
+        "sab": 13,
+        "car": 14,
+        "int": 12
+    },
+    "salvaciones": {
+        "fue": false,
+        "des": true,
+        "con": false,
+        "sab": false,
+        "car": false,
+        "int": true
+    },
+    "inspiracion": 1,
+    "nivel": 5,
+    "trasfondo": "Criminal",
+    "jugador": "Alex",
+    "raza": "Mediana piesligeros",
+    "alineamiento": "Caótica neutral",
+    "experiencia": 6500,
+    "velocidad": "7,5 m",
+    "dados_golpe": {
+        "total": "5d8",
+        "restantes": 3
+    },
+    "conjuros": {
+        "clase": "Pícara (Embaucadora arcana)",
+        "aptitud": "int",
+        "niveles": {
+            "9": {
+                "lista": [],
+                "total": 0,
+                "usados": 0
+            },
+            "0": {
+                "lista": [
+                    {
+                        "nombre": "Mano de mago"
+                    },
+                    {
+                        "nombre": "Luz"
+                    },
+                    {
+                        "nombre": "Ilusión menor"
+                    }
+                ]
+            },
+            "2": {
+                "lista": [],
+                "total": 0,
+                "usados": 0
+            },
+            "3": {
+                "lista": [],
+                "total": 0,
+                "usados": 0
+            },
+            "4": {
+                "lista": [],
+                "total": 0,
+                "usados": 0
+            },
+            "5": {
+                "lista": [],
+                "total": 0,
+                "usados": 0
+            },
+            "6": {
+                "lista": [],
+                "total": 0,
+                "usados": 0
+            },
+            "7": {
+                "lista": [],
+                "total": 0,
+                "usados": 0
+            },
+            "8": {
+                "lista": [],
+                "total": 0,
+                "usados": 0
+            },
+            "1": {
+                "lista": [
+                    {
+                        "nombre": "Disfrazarse",
+                        "preparado": true
+                    },
+                    {
+                        "nombre": "Encantar persona",
+                        "preparado": true
+                    },
+                    {
+                        "nombre": "Dormir",
+                        "preparado": true
+                    }
+                ],
+                "total": 3,
+                "usados": 1
+            }
+        }
+    },
+    "muerte": {
+        "exitos": 0,
+        "fallos": 0
+    },
+    "habilidades": {
+        "naturaleza": 0,
+        "percepcion": 1,
+        "interpretacion": 0,
+        "persuasion": 0,
+        "religion": 0,
+        "juego_manos": 1,
+        "sigilo": 2,
+        "supervivencia": 0,
+        "acrobacias": 1,
+        "trato_animales": 0,
+        "arcanos": 0,
+        "atletismo": 0,
+        "engano": 2,
+        "historia": 0,
+        "perspicacia": 0,
+        "intimidacion": 0,
+        "investigacion": 1,
+        "medicina": 0
+    },
+    "monedas": {
+        "pe": 0,
+        "po": 112,
+        "ppt": 0,
+        "pc": 12,
+        "pp": 25
+    },
+    "ajustes": {
+        "iniciativa": null,
+        "percepcion_pasiva": null,
+        "cd_conjuros": null,
+        "ataque_conjuros": null,
+        "competencia": null
+    },
+    "aliados": "Gremio de las Manos Grises (contactos en el puerto).\nVaro, perista en Aguasprofundas."
+}

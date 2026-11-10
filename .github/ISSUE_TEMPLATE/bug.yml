@@ -1,0 +1,26 @@
+name: Bug
+description: Something does not work
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes: { label: dndsheet version (Tools → dndsheet → About) }
+    validations: { required: true }
+  - type: input
+    id: koreader
+    attributes: { label: KOReader version }
+    validations: { required: true }
+  - type: input
+    id: device
+    attributes: { label: Device (model, and SimpleUI or other plugins if any) }
+    validations: { required: true }
+  - type: textarea
+    id: steps
+    attributes: { label: Steps to reproduce, description: What you did, what you expected and what happened }
+    validations: { required: true }
+  - type: textarea
+    id: log
+    attributes:
+      label: crash.log
+      description: Lines containing "dndsheet" (enable Settings → Developer options → Enable debug logging first). Do not paste personal data.
+      render: text

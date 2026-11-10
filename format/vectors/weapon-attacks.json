@@ -1,0 +1,315 @@
+{
+ "description": "Rules.weapon_attack(data, weapon, proficient) → bonus con signo, daño con modificador y atributo usado. `weapon` trae solo los campos de weapons.json del compendio que usa la regla.",
+ "cases": [
+  {
+   "name": "Quarterstaff FUE 12 DES 16 con competencia",
+   "input": {
+    "nivel": 1,
+    "atributos": {
+     "fue": 12,
+     "des": 16
+    }
+   },
+   "weapon": {
+    "kind": "melee",
+    "damage": "1d6",
+    "damage_type": "bludgeoning",
+    "properties": [
+     "Versatile"
+    ],
+    "versatile": "1d8"
+   },
+   "proficient": true,
+   "expect": {
+    "bonus": "+3",
+    "damage": "1d6+1 bludgeoning (1d8+1 two-handed)",
+    "ability": "fue"
+   }
+  },
+  {
+   "name": "Dagger finesse usa el mayor (DES)",
+   "input": {
+    "nivel": 1,
+    "atributos": {
+     "fue": 12,
+     "des": 16
+    }
+   },
+   "weapon": {
+    "kind": "melee",
+    "damage": "1d4",
+    "damage_type": "piercing",
+    "properties": [
+     "Finesse",
+     "Light",
+     "Thrown"
+    ],
+    "versatile": null
+   },
+   "proficient": true,
+   "expect": {
+    "bonus": "+5",
+    "damage": "1d4+3 piercing",
+    "ability": "des"
+   }
+  },
+  {
+   "name": "Dagger finesse usa el mayor (FUE)",
+   "input": {
+    "nivel": 1,
+    "atributos": {
+     "fue": 18,
+     "des": 12
+    }
+   },
+   "weapon": {
+    "kind": "melee",
+    "damage": "1d4",
+    "damage_type": "piercing",
+    "properties": [
+     "Finesse",
+     "Light",
+     "Thrown"
+    ],
+    "versatile": null
+   },
+   "proficient": true,
+   "expect": {
+    "bonus": "+6",
+    "damage": "1d4+4 piercing",
+    "ability": "fue"
+   }
+  },
+  {
+   "name": "Dagger finesse con FUE = DES usa FUE",
+   "input": {
+    "nivel": 1,
+    "atributos": {
+     "fue": 14,
+     "des": 14
+    }
+   },
+   "weapon": {
+    "kind": "melee",
+    "damage": "1d4",
+    "damage_type": "piercing",
+    "properties": [
+     "Finesse",
+     "Light",
+     "Thrown"
+    ],
+    "versatile": null
+   },
+   "proficient": true,
+   "expect": {
+    "bonus": "+4",
+    "damage": "1d4+2 piercing",
+    "ability": "fue"
+   }
+  },
+  {
+   "name": "Shortbow a distancia usa DES",
+   "input": {
+    "nivel": 1,
+    "atributos": {
+     "fue": 12,
+     "des": 16
+    }
+   },
+   "weapon": {
+    "kind": "ranged",
+    "damage": "1d6",
+    "damage_type": "piercing",
+    "properties": [
+     "Ammunition",
+     "Two-Handed"
+    ],
+    "versatile": null
+   },
+   "proficient": true,
+   "expect": {
+    "bonus": "+5",
+    "damage": "1d6+3 piercing",
+    "ability": "des"
+   }
+  },
+  {
+   "name": "Quarterstaff sin competencia",
+   "input": {
+    "nivel": 1,
+    "atributos": {
+     "fue": 12,
+     "des": 16
+    }
+   },
+   "weapon": {
+    "kind": "melee",
+    "damage": "1d6",
+    "damage_type": "bludgeoning",
+    "properties": [
+     "Versatile"
+    ],
+    "versatile": "1d8"
+   },
+   "proficient": false,
+   "expect": {
+    "bonus": "+1",
+    "damage": "1d6+1 bludgeoning (1d8+1 two-handed)",
+    "ability": "fue"
+   }
+  },
+  {
+   "name": "Quarterstaff con modificador 0 (sin «+0»)",
+   "input": {
+    "nivel": 1,
+    "atributos": {
+     "fue": 10,
+     "des": 10
+    }
+   },
+   "weapon": {
+    "kind": "melee",
+    "damage": "1d6",
+    "damage_type": "bludgeoning",
+    "properties": [
+     "Versatile"
+    ],
+    "versatile": "1d8"
+   },
+   "proficient": true,
+   "expect": {
+    "bonus": "+2",
+    "damage": "1d6 bludgeoning (1d8 two-handed)",
+    "ability": "fue"
+   }
+  },
+  {
+   "name": "Club con modificador negativo",
+   "input": {
+    "nivel": 1,
+    "atributos": {
+     "fue": 8,
+     "des": 10
+    }
+   },
+   "weapon": {
+    "kind": "melee",
+    "damage": "1d4",
+    "damage_type": "bludgeoning",
+    "properties": [
+     "Light"
+    ],
+    "versatile": null
+   },
+   "proficient": true,
+   "expect": {
+    "bonus": "+1",
+    "damage": "1d4-1 bludgeoning",
+    "ability": "fue"
+   }
+  },
+  {
+   "name": "Club con competencia de nivel 9",
+   "input": {
+    "nivel": 9,
+    "atributos": {
+     "fue": 10,
+     "des": 10
+    }
+   },
+   "weapon": {
+    "kind": "melee",
+    "damage": "1d4",
+    "damage_type": "bludgeoning",
+    "properties": [
+     "Light"
+    ],
+    "versatile": null
+   },
+   "proficient": true,
+   "expect": {
+    "bonus": "+4",
+    "damage": "1d4 bludgeoning",
+    "ability": "fue"
+   }
+  },
+  {
+   "name": "Rapier finesse con DES alta",
+   "input": {
+    "nivel": 5,
+    "atributos": {
+     "fue": 10,
+     "des": 20
+    }
+   },
+   "weapon": {
+    "kind": "melee",
+    "damage": "1d8",
+    "damage_type": "piercing",
+    "properties": [
+     "Finesse"
+    ],
+    "versatile": null
+   },
+   "proficient": true,
+   "expect": {
+    "bonus": "+8",
+    "damage": "1d8+5 piercing",
+    "ability": "des"
+   }
+  },
+  {
+   "name": "Greatsword con FUE 20 nivel 17",
+   "input": {
+    "nivel": 17,
+    "atributos": {
+     "fue": 20,
+     "des": 10
+    }
+   },
+   "weapon": {
+    "kind": "melee",
+    "damage": "2d6",
+    "damage_type": "slashing",
+    "properties": [
+     "Heavy",
+     "Two-Handed"
+    ],
+    "versatile": null
+   },
+   "proficient": true,
+   "expect": {
+    "bonus": "+11",
+    "damage": "2d6+5 slashing",
+    "ability": "fue"
+   }
+  },
+  {
+   "name": "Competencia manual (ajuste)",
+   "input": {
+    "nivel": 1,
+    "atributos": {
+     "fue": 14
+    },
+    "ajustes": {
+     "competencia": 5
+    }
+   },
+   "weapon": {
+    "kind": "melee",
+    "damage": "1d4",
+    "damage_type": "bludgeoning",
+    "properties": [
+     "Light"
+    ],
+    "versatile": null
+   },
+   "proficient": true,
+   "expect": {
+    "bonus": "+7",
+    "damage": "1d4+2 bludgeoning",
+    "ability": "fue"
+   }
+  }
+ ]
+}

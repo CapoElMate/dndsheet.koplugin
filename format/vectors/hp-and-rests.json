@@ -1,0 +1,507 @@
+{
+ "description": "Cada caso parte de `input` (normalizado), aplica `ops` en orden y compara con `expect` (solo los campos listados).",
+ "cases": [
+  {
+   "name": "Daño: primero el HP temporal",
+   "input": {
+    "nivel": 5,
+    "atributos": {
+     "fue": 8,
+     "des": 18,
+     "con": 14,
+     "int": 12,
+     "sab": 13,
+     "car": 14
+    },
+    "salvaciones": {
+     "des": true,
+     "int": true
+    },
+    "habilidades": {
+     "acrobacias": 1,
+     "engano": 2,
+     "percepcion": 1,
+     "sigilo": 2
+    },
+    "hp": {
+     "maximo": 38,
+     "actual": 27,
+     "temporal": 5
+    },
+    "dados_golpe": {
+     "total": "5d8",
+     "restantes": 3
+    }
+   },
+   "ops": [
+    [
+     "damage",
+     8
+    ]
+   ],
+   "expect": {
+    "hp": {
+     "actual": 24,
+     "temporal": 0
+    }
+   }
+  },
+  {
+   "name": "Daño menor que el temporal",
+   "input": {
+    "nivel": 5,
+    "atributos": {
+     "fue": 8,
+     "des": 18,
+     "con": 14,
+     "int": 12,
+     "sab": 13,
+     "car": 14
+    },
+    "salvaciones": {
+     "des": true,
+     "int": true
+    },
+    "habilidades": {
+     "acrobacias": 1,
+     "engano": 2,
+     "percepcion": 1,
+     "sigilo": 2
+    },
+    "hp": {
+     "maximo": 38,
+     "actual": 27,
+     "temporal": 5
+    },
+    "dados_golpe": {
+     "total": "5d8",
+     "restantes": 3
+    }
+   },
+   "ops": [
+    [
+     "damage",
+     3
+    ]
+   ],
+   "expect": {
+    "hp": {
+     "actual": 27,
+     "temporal": 2
+    }
+   }
+  },
+  {
+   "name": "Daño enorme: mínimo 0",
+   "input": {
+    "nivel": 5,
+    "atributos": {
+     "fue": 8,
+     "des": 18,
+     "con": 14,
+     "int": 12,
+     "sab": 13,
+     "car": 14
+    },
+    "salvaciones": {
+     "des": true,
+     "int": true
+    },
+    "habilidades": {
+     "acrobacias": 1,
+     "engano": 2,
+     "percepcion": 1,
+     "sigilo": 2
+    },
+    "hp": {
+     "maximo": 38,
+     "actual": 27,
+     "temporal": 5
+    },
+    "dados_golpe": {
+     "total": "5d8",
+     "restantes": 3
+    }
+   },
+   "ops": [
+    [
+     "damage",
+     100
+    ]
+   ],
+   "expect": {
+    "hp": {
+     "actual": 0,
+     "temporal": 0
+    }
+   }
+  },
+  {
+   "name": "Daño 0 o negativo no hace nada",
+   "input": {
+    "nivel": 5,
+    "atributos": {
+     "fue": 8,
+     "des": 18,
+     "con": 14,
+     "int": 12,
+     "sab": 13,
+     "car": 14
+    },
+    "salvaciones": {
+     "des": true,
+     "int": true
+    },
+    "habilidades": {
+     "acrobacias": 1,
+     "engano": 2,
+     "percepcion": 1,
+     "sigilo": 2
+    },
+    "hp": {
+     "maximo": 38,
+     "actual": 27,
+     "temporal": 5
+    },
+    "dados_golpe": {
+     "total": "5d8",
+     "restantes": 3
+    }
+   },
+   "ops": [
+    [
+     "damage",
+     0
+    ],
+    [
+     "damage",
+     -4
+    ]
+   ],
+   "expect": {
+    "hp": {
+     "actual": 27,
+     "temporal": 5
+    }
+   }
+  },
+  {
+   "name": "Curar con tope en el máximo",
+   "input": {
+    "nivel": 5,
+    "atributos": {
+     "fue": 8,
+     "des": 18,
+     "con": 14,
+     "int": 12,
+     "sab": 13,
+     "car": 14
+    },
+    "salvaciones": {
+     "des": true,
+     "int": true
+    },
+    "habilidades": {
+     "acrobacias": 1,
+     "engano": 2,
+     "percepcion": 1,
+     "sigilo": 2
+    },
+    "hp": {
+     "maximo": 38,
+     "actual": 10,
+     "temporal": 0
+    },
+    "dados_golpe": {
+     "total": "5d8",
+     "restantes": 3
+    }
+   },
+   "ops": [
+    [
+     "heal",
+     50
+    ]
+   ],
+   "expect": {
+    "hp": {
+     "actual": 38
+    }
+   }
+  },
+  {
+   "name": "Curar no baja un HP que ya supera el máximo",
+   "input": {
+    "nivel": 5,
+    "atributos": {
+     "fue": 8,
+     "des": 18,
+     "con": 14,
+     "int": 12,
+     "sab": 13,
+     "car": 14
+    },
+    "salvaciones": {
+     "des": true,
+     "int": true
+    },
+    "habilidades": {
+     "acrobacias": 1,
+     "engano": 2,
+     "percepcion": 1,
+     "sigilo": 2
+    },
+    "hp": {
+     "maximo": 38,
+     "actual": 40,
+     "temporal": 0
+    },
+    "dados_golpe": {
+     "total": "5d8",
+     "restantes": 3
+    }
+   },
+   "ops": [
+    [
+     "heal",
+     5
+    ]
+   ],
+   "expect": {
+    "hp": {
+     "actual": 40
+    }
+   }
+  },
+  {
+   "name": "Descanso largo",
+   "input": {
+    "nivel": 5,
+    "atributos": {
+     "fue": 8,
+     "des": 18,
+     "con": 14,
+     "int": 12,
+     "sab": 13,
+     "car": 14
+    },
+    "salvaciones": {
+     "des": true,
+     "int": true
+    },
+    "habilidades": {
+     "acrobacias": 1,
+     "engano": 2,
+     "percepcion": 1,
+     "sigilo": 2
+    },
+    "hp": {
+     "maximo": 38,
+     "actual": 27,
+     "temporal": 5
+    },
+    "dados_golpe": {
+     "total": "5d8",
+     "restantes": 3
+    },
+    "muerte": {
+     "exitos": 1,
+     "fallos": 2
+    },
+    "conjuros": {
+     "niveles": {
+      "1": {
+       "total": 3,
+       "usados": 3
+      },
+      "2": {
+       "total": 2,
+       "usados": 1
+      }
+     }
+    }
+   },
+   "ops": [
+    [
+     "long_rest"
+    ]
+   ],
+   "expect": {
+    "hp": {
+     "actual": 38,
+     "temporal": 0
+    },
+    "muerte": {
+     "exitos": 0,
+     "fallos": 0
+    },
+    "slots_usados": {
+     "1": 0,
+     "2": 0
+    },
+    "dados_golpe": {
+     "restantes": 5
+    }
+   }
+  },
+  {
+   "name": "Descanso largo recupera al menos 1 dado",
+   "input": {
+    "nivel": 5,
+    "atributos": {
+     "fue": 8,
+     "des": 18,
+     "con": 14,
+     "int": 12,
+     "sab": 13,
+     "car": 14
+    },
+    "salvaciones": {
+     "des": true,
+     "int": true
+    },
+    "habilidades": {
+     "acrobacias": 1,
+     "engano": 2,
+     "percepcion": 1,
+     "sigilo": 2
+    },
+    "hp": {
+     "maximo": 38,
+     "actual": 27,
+     "temporal": 5
+    },
+    "dados_golpe": {
+     "total": "1d8",
+     "restantes": 0
+    }
+   },
+   "ops": [
+    [
+     "long_rest"
+    ]
+   ],
+   "expect": {
+    "dados_golpe": {
+     "restantes": 1
+    }
+   }
+  },
+  {
+   "name": "Descanso largo recupera la mitad de los dados",
+   "input": {
+    "nivel": 5,
+    "atributos": {
+     "fue": 8,
+     "des": 18,
+     "con": 14,
+     "int": 12,
+     "sab": 13,
+     "car": 14
+    },
+    "salvaciones": {
+     "des": true,
+     "int": true
+    },
+    "habilidades": {
+     "acrobacias": 1,
+     "engano": 2,
+     "percepcion": 1,
+     "sigilo": 2
+    },
+    "hp": {
+     "maximo": 38,
+     "actual": 27,
+     "temporal": 5
+    },
+    "dados_golpe": {
+     "total": "5d8",
+     "restantes": 0
+    }
+   },
+   "ops": [
+    [
+     "long_rest"
+    ]
+   ],
+   "expect": {
+    "dados_golpe": {
+     "restantes": 2
+    }
+   }
+  },
+  {
+   "name": "Dados de golpe mixtos (3d10+2d8 = 5)",
+   "input": {
+    "nivel": 5,
+    "atributos": {
+     "fue": 8,
+     "des": 18,
+     "con": 14,
+     "int": 12,
+     "sab": 13,
+     "car": 14
+    },
+    "salvaciones": {
+     "des": true,
+     "int": true
+    },
+    "habilidades": {
+     "acrobacias": 1,
+     "engano": 2,
+     "percepcion": 1,
+     "sigilo": 2
+    },
+    "hp": {
+     "maximo": 38,
+     "actual": 27,
+     "temporal": 5
+    },
+    "dados_golpe": {
+     "total": "3d10+2d8",
+     "restantes": 1
+    }
+   },
+   "ops": [
+    [
+     "long_rest"
+    ]
+   ],
+   "expect": {
+    "dados_golpe": {
+     "restantes": 3
+    }
+   }
+  }
+ ],
+ "hit_dice_count": [
+  [
+   "5d8",
+   5
+  ],
+  [
+   "3d10+2d8",
+   5
+  ],
+  [
+   "1d8+2",
+   1
+  ],
+  [
+   "x",
+   null
+  ],
+  [
+   "",
+   null
+  ],
+  [
+   null,
+   null
+  ],
+  [
+   "d8",
+   null
+  ]
+ ]
+}

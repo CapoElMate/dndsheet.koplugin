@@ -1,0 +1,163 @@
+{
+    "ajustes": {
+        "ataque_conjuros": null,
+        "cd_conjuros": null,
+        "competencia": null,
+        "iniciativa": null,
+        "percepcion_pasiva": null
+    },
+    "aliados": "",
+    "alineamiento": "",
+    "apariencia": "",
+    "ataques": [],
+    "ataques_notas": "",
+    "atributos": {
+        "car": 10,
+        "con": 10,
+        "des": 10,
+        "fue": 10,
+        "int": 10,
+        "sab": 10
+    },
+    "ca": 10,
+    "clase_nivel": "",
+    "conjuros": {
+        "aptitud": null,
+        "clase": "",
+        "niveles": {
+            "0": {
+                "lista": []
+            },
+            "1": {
+                "lista": [],
+                "total": 0,
+                "usados": 0
+            },
+            "2": {
+                "lista": [],
+                "total": 0,
+                "usados": 0
+            },
+            "3": {
+                "lista": [],
+                "total": 0,
+                "usados": 0
+            },
+            "4": {
+                "lista": [],
+                "total": 0,
+                "usados": 0
+            },
+            "5": {
+                "lista": [],
+                "total": 0,
+                "usados": 0
+            },
+            "6": {
+                "lista": [],
+                "total": 0,
+                "usados": 0
+            },
+            "7": {
+                "lista": [],
+                "total": 0,
+                "usados": 0
+            },
+            "8": {
+                "lista": [],
+                "total": 0,
+                "usados": 0
+            },
+            "9": {
+                "lista": [],
+                "total": 0,
+                "usados": 0
+            }
+        }
+    },
+    "dados_golpe": {
+        "restantes": 1,
+        "total": "1d8"
+    },
+    "equipo": "",
+    "experiencia": 0,
+    "fisico": {
+        "altura": "",
+        "edad": "",
+        "ojos": "",
+        "pelo": "",
+        "peso": "",
+        "piel": ""
+    },
+    "habilidades": {
+        "acrobacias": 0,
+        "arcanos": 0,
+        "atletismo": 0,
+        "engano": 0,
+        "historia": 0,
+        "interpretacion": 0,
+        "intimidacion": 0,
+        "investigacion": 0,
+        "juego_manos": 0,
+        "medicina": 0,
+        "naturaleza": 0,
+        "percepcion": 0,
+        "perspicacia": 0,
+        "persuasion": 0,
+        "religion": 0,
+        "sigilo": 0,
+        "supervivencia": 0,
+        "trato_animales": 0
+    },
+    "historia": "",
+    "hp": {
+        "actual": 10,
+        "maximo": 10,
+        "temporal": 0
+    },
+    "inspiracion": 0,
+    "jugador": "",
+    "meta": {
+        "app": "dndsheet",
+        "creado": 0,
+        "guardado": 0,
+        "schema": 3
+    },
+    "monedas": {
+        "pc": 0,
+        "pe": 0,
+        "po": 0,
+        "pp": 0,
+        "ppt": 0
+    },
+    "muerte": {
+        "exitos": 0,
+        "fallos": 0
+    },
+    "nivel": 1,
+    "nombre": "",
+    "notas": "",
+    "organizacion": "",
+    "otras_competencias": "",
+    "personalidad": {
+        "defectos": "",
+        "ideales": "",
+        "rasgos": "",
+        "vinculos": ""
+    },
+    "rasgos": "",
+    "rasgos_adicionales": "",
+    "rasgos_ref": [],
+    "raza": "",
+    "salvaciones": {
+        "car": false,
+        "con": false,
+        "des": false,
+        "fue": false,
+        "int": false,
+        "sab": false
+    },
+    "tesoro": "",
+    "trasfondo": "",
+    "velocidad": ""
+}

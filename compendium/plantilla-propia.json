@@ -1,0 +1,19 @@
+{
+ "_comentario": "Plantilla de entradas propias del compendio (F-08). Copiá este archivo a <carpeta de personajes>/compendio/ (por ejemplo documents/dnd/compendio/) y editalo. Formato: un objeto con listas por tipo (classes, subclasses, species, feats, spells, weapons); cada entrada usa los mismos campos que compendium/srd521/en/*.json. Obligatorios: id (único, sin espacios), name y los de su tipo (spells: level 0-9 y text; feats: text; weapons: damage, category y kind; subclasses: class_id y features con level; species: traits). Si un id repite uno del SRD, gana el tuyo. Las entradas con errores se saltean y se cuentan en «Acerca del compendio». Las claves que empiezan con _ se ignoran. El contenido de este ejemplo es inventado.",
+ "subclasses": [
+  {
+   "id": "custom.subclase-ejemplo",
+   "class_id": "fighter",
+   "name": "Subclase de ejemplo",
+   "source": "custom",
+   "features": [
+    {
+     "id": "custom.subclase-ejemplo.rasgo-ejemplo",
+     "name": "Rasgo de ejemplo",
+     "level": 3,
+     "text": "Texto de ejemplo, inventado: una vez por descanso corto puedes describir aquí lo que hace tu rasgo.\nLos párrafos se separan con saltos de línea y las viñetas empiezan con «- ».\n- Primera viñeta de ejemplo.\n- Segunda viñeta de ejemplo."
+    }
+   ]
+  }
+ ]
+}

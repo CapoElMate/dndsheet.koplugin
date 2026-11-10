@@ -1,0 +1,21 @@
+[
+  {"name": "objeto vacío", "input": {}},
+  {"name": "números como texto y texto como números", "input": {"nombre": 123, "nivel": "7", "experiencia": "300", "ca": "15.9", "atributos": {"fue": "18", "des": "x", "con": 99, "int": 0}, "hp": {"maximo": "40", "actual": -5, "temporal": "2"}}},
+  {"name": "rangos", "input": {"nivel": 50, "inspiracion": 500, "muerte": {"exitos": 9, "fallos": -1}, "monedas": {"po": -10, "pc": 5.7}, "dados_golpe": {"total": 8, "restantes": -3}}},
+  {"name": "inspiración booleana", "input": {"inspiracion": true}},
+  {"name": "inspiración false", "input": {"inspiracion": false}},
+  {"name": "habilidades inválidas", "input": {"habilidades": {"sigilo": 2, "atletismo": 3, "arcanos": "1", "historia": true, "medicina": null}}},
+  {"name": "salvaciones no booleanas", "input": {"salvaciones": {"fue": 1, "des": "true", "con": true, "int": false}}},
+  {"name": "ajustes manuales", "input": {"ajustes": {"competencia": "4", "iniciativa": 3.7, "percepcion_pasiva": "x", "cd_conjuros": null, "ataque_conjuros": 6}}},
+  {"name": "aptitud válida e inválida", "input": {"conjuros": {"aptitud": "sab"}}},
+  {"name": "aptitud inválida", "input": {"conjuros": {"aptitud": "fue"}}},
+  {"name": "ataques con basura", "input": {"ataques": [{"nombre": "Espada", "bonus": 5, "dano": null, "ref": "weapon.longsword", "extra": 1}, 7, "x", null, {"nombre": "A", "ref": ""}, {"nombre": "B", "ref": 5}, []]}},
+  {"name": "ataques como objeto", "input": {"ataques": {"nombre": "x"}}},
+  {"name": "rasgos_ref con basura", "input": {"rasgos_ref": [{"ref": "monk.martial-arts", "nombre": "Martial Arts"}, {"nombre": "sin ref"}, {"ref": ""}, {"ref": 3}, "x", {"ref": "a", "nota": 5}]}},
+  {"name": "ranuras fuera de rango", "input": {"conjuros": {"niveles": {"1": {"total": 4, "usados": 9, "lista": [{"nombre": "Bless", "preparado": 1}]}, "2": {"total": 500, "usados": -2}, "3": "x", "0": {"total": 3, "usados": 1, "lista": [{"nombre": "Fire Bolt", "ref": "spell.fire-bolt"}]}}}}},
+  {"name": "listas de conjuros no listas", "input": {"conjuros": {"niveles": {"1": {"lista": "x"}, "4": {"lista": {"a": 1}}}}}},
+  {"name": "claves desconocidas se conservan", "input": {"campo_nuevo": [1, 2], "hp": {"extra": true}, "meta": {"otra": "x"}, "conjuros": {"rareza": 1}}},
+  {"name": "tipos incorrectos en objetos", "input": {"atributos": "x", "hp": 5, "monedas": [], "personalidad": null, "fisico": "x", "conjuros": 7}},
+  {"name": "textos largos y saltos de línea", "input": {"notas": "línea 1\nlínea 2 — ñandú ✓", "historia": 42, "rasgos": null}},
+  {"name": "meta con basura", "input": {"meta": {"schema": "3", "app": 5, "creado": "1700000000", "guardado": -4}}}
+]

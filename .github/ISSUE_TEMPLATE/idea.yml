@@ -1,0 +1,11 @@
+name: Idea
+description: Suggest a feature
+labels: [feature]
+body:
+  - type: textarea
+    id: idea
+    attributes: { label: What would you like and why? }
+    validations: { required: true }
+  - type: markdown
+    attributes:
+      value: "Please do not paste text from the Player's Handbook or other non-SRD books."

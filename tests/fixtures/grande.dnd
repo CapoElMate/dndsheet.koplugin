@@ -1,0 +1,355 @@
+{
+ "meta": {
+  "schema": 1,
+  "app": "dndsheet",
+  "creado": 1762450000,
+  "guardado": 1762450000
+ },
+ "nombre": "Grande",
+ "clase_nivel": "Mago 12",
+ "nivel": 12,
+ "trasfondo": "Criminal",
+ "jugador": "Alex",
+ "raza": "Mediana piesligeros",
+ "alineamiento": "Caótica neutral",
+ "experiencia": 6500,
+ "atributos": {
+  "fue": 8,
+  "des": 18,
+  "con": 14,
+  "int": 12,
+  "sab": 13,
+  "car": 14
+ },
+ "salvaciones": {
+  "fue": false,
+  "des": true,
+  "con": false,
+  "int": true,
+  "sab": false,
+  "car": false
+ },
+ "habilidades": {
+  "acrobacias": 1,
+  "trato_animales": 0,
+  "arcanos": 0,
+  "atletismo": 0,
+  "engano": 2,
+  "historia": 0,
+  "perspicacia": 0,
+  "intimidacion": 0,
+  "investigacion": 1,
+  "medicina": 0,
+  "naturaleza": 0,
+  "percepcion": 1,
+  "interpretacion": 0,
+  "persuasion": 0,
+  "religion": 0,
+  "juego_manos": 1,
+  "sigilo": 2,
+  "supervivencia": 0
+ },
+ "inspiracion": true,
+ "ca": 15,
+ "velocidad": "7,5 m",
+ "hp": {
+  "maximo": 38,
+  "actual": 27,
+  "temporal": 5
+ },
+ "dados_golpe": {
+  "total": "5d8",
+  "restantes": 3
+ },
+ "muerte": {
+  "exitos": 0,
+  "fallos": 0
+ },
+ "ajustes": {
+  "competencia": null,
+  "iniciativa": null,
+  "percepcion_pasiva": null,
+  "cd_conjuros": null,
+  "ataque_conjuros": null
+ },
+ "ataques": [
+  {
+   "nombre": "Arma 1",
+   "bonus": "+4",
+   "dano": "1d8+1 cortante"
+  },
+  {
+   "nombre": "Arma 2",
+   "bonus": "+5",
+   "dano": "1d8+2 cortante"
+  },
+  {
+   "nombre": "Arma 3",
+   "bonus": "+6",
+   "dano": "1d8+3 cortante"
+  },
+  {
+   "nombre": "Arma 4",
+   "bonus": "+7",
+   "dano": "1d8+4 cortante"
+  },
+  {
+   "nombre": "Arma 5",
+   "bonus": "+8",
+   "dano": "1d8+5 cortante"
+  },
+  {
+   "nombre": "Arma 6",
+   "bonus": "+9",
+   "dano": "1d8+6 cortante"
+  },
+  {
+   "nombre": "Arma 7",
+   "bonus": "+10",
+   "dano": "1d8+7 cortante"
+  },
+  {
+   "nombre": "Arma 8",
+   "bonus": "+11",
+   "dano": "1d8+8 cortante"
+  },
+  {
+   "nombre": "Arma 9",
+   "bonus": "+12",
+   "dano": "1d8+9 cortante"
+  },
+  {
+   "nombre": "Arma 10",
+   "bonus": "+13",
+   "dano": "1d8+10 cortante"
+  }
+ ],
+ "ataques_notas": "Ataque furtivo: +3d6 una vez por turno con ventaja o aliado adyacente.\nAcción astuta: correr, destrabarse o esconderse como acción adicional.",
+ "monedas": {
+  "pc": 12,
+  "pp": 25,
+  "pe": 0,
+  "po": 112,
+  "ppt": 0
+ },
+ "equipo": "Armadura de cuero tachonado\nHerramientas de ladrón\nCapa con capucha\nCuerda de seda (15 m)\nRaciones (5 días)\nPalanca",
+ "otras_competencias": "Armaduras ligeras; armas sencillas, ballestas de mano, espadas largas, estoques, espadas cortas.\nHerramientas de ladrón, dados.\nIdiomas: común, mediano, jerga de ladrones, élfico.",
+ "rasgos": "Pericia (Sigilo, Engaño)\nAtaque furtivo (3d6)\nJerga de ladrones\nAcción astuta\nPrestidigitación con mano de mago\nEsquiva asombrosa\nSuerte (mediana)\nValiente\nAgilidad mediana\nSigilo natural",
+ "personalidad": {
+  "rasgos": "Siempre tengo un plan de escape.",
+  "ideales": "Libertad. Las cadenas están para romperse.",
+  "vinculos": "Le debo la vida a Varo, mi antiguo jefe de banda.",
+  "defectos": "Si veo algo valioso, me cuesta no tomarlo."
+ },
+ "fisico": {
+  "edad": "24",
+  "altura": "0,9 m",
+  "peso": "18 kg",
+  "ojos": "Verdes",
+  "piel": "Clara",
+  "pelo": "Castaño, trenzado"
+ },
+ "apariencia": "Pequeña, ágil, con una cicatriz en la ceja izquierda. Viste ropa oscura con muchos bolsillos.",
+ "aliados": "Gremio de las Manos Grises (contactos en el puerto).\nVaro, perista en Aguasprofundas.",
+ "organizacion": "Manos Grises",
+ "rasgos_adicionales": "",
+ "historia": "Creció en los muelles robando para sobrevivir. El gremio la entrenó, pero un golpe salió mal y tuvo que huir de la ciudad...",
+ "tesoro": "Anillo de plata con un sello desconocido.",
+ "conjuros": {
+  "clase": "Mago",
+  "aptitud": "int",
+  "niveles": {
+   "0": {
+    "lista": [
+     {
+      "nombre": "Truco 1"
+     },
+     {
+      "nombre": "Truco 2"
+     },
+     {
+      "nombre": "Truco 3"
+     },
+     {
+      "nombre": "Truco 4"
+     },
+     {
+      "nombre": "Truco 5"
+     }
+    ]
+   },
+   "1": {
+    "total": 4,
+    "usados": 0,
+    "lista": [
+     {
+      "nombre": "Conjuro 01 (nivel 1)",
+      "preparado": true
+     },
+     {
+      "nombre": "Conjuro 02 (nivel 1)",
+      "preparado": false
+     },
+     {
+      "nombre": "Conjuro 03 (nivel 1)",
+      "preparado": true
+     },
+     {
+      "nombre": "Conjuro 04 (nivel 1)",
+      "preparado": false
+     },
+     {
+      "nombre": "Conjuro 05 (nivel 1)",
+      "preparado": true
+     }
+    ]
+   },
+   "2": {
+    "total": 3,
+    "usados": 0,
+    "lista": [
+     {
+      "nombre": "Conjuro 06 (nivel 2)",
+      "preparado": true
+     },
+     {
+      "nombre": "Conjuro 07 (nivel 2)",
+      "preparado": false
+     },
+     {
+      "nombre": "Conjuro 08 (nivel 2)",
+      "preparado": true
+     },
+     {
+      "nombre": "Conjuro 09 (nivel 2)",
+      "preparado": false
+     },
+     {
+      "nombre": "Conjuro 10 (nivel 2)",
+      "preparado": true
+     }
+    ]
+   },
+   "3": {
+    "total": 3,
+    "usados": 0,
+    "lista": [
+     {
+      "nombre": "Conjuro 11 (nivel 3)",
+      "preparado": true
+     },
+     {
+      "nombre": "Conjuro 12 (nivel 3)",
+      "preparado": false
+     },
+     {
+      "nombre": "Conjuro 13 (nivel 3)",
+      "preparado": true
+     },
+     {
+      "nombre": "Conjuro 14 (nivel 3)",
+      "preparado": false
+     },
+     {
+      "nombre": "Conjuro 15 (nivel 3)",
+      "preparado": true
+     }
+    ]
+   },
+   "4": {
+    "total": 3,
+    "usados": 0,
+    "lista": [
+     {
+      "nombre": "Conjuro 16 (nivel 4)",
+      "preparado": true
+     },
+     {
+      "nombre": "Conjuro 17 (nivel 4)",
+      "preparado": false
+     },
+     {
+      "nombre": "Conjuro 18 (nivel 4)",
+      "preparado": true
+     },
+     {
+      "nombre": "Conjuro 19 (nivel 4)",
+      "preparado": false
+     },
+     {
+      "nombre": "Conjuro 20 (nivel 4)",
+      "preparado": true
+     }
+    ]
+   },
+   "5": {
+    "total": 2,
+    "usados": 0,
+    "lista": [
+     {
+      "nombre": "Conjuro 21 (nivel 5)",
+      "preparado": true
+     },
+     {
+      "nombre": "Conjuro 22 (nivel 5)",
+      "preparado": false
+     },
+     {
+      "nombre": "Conjuro 23 (nivel 5)",
+      "preparado": true
+     },
+     {
+      "nombre": "Conjuro 24 (nivel 5)",
+      "preparado": false
+     },
+     {
+      "nombre": "Conjuro 25 (nivel 5)",
+      "preparado": true
+     }
+    ]
+   },
+   "6": {
+    "total": 1,
+    "usados": 0,
+    "lista": [
+     {
+      "nombre": "Conjuro 26 (nivel 6)",
+      "preparado": true
+     },
+     {
+      "nombre": "Conjuro 27 (nivel 6)",
+      "preparado": false
+     },
+     {
+      "nombre": "Conjuro 28 (nivel 6)",
+      "preparado": true
+     },
+     {
+      "nombre": "Conjuro 29 (nivel 6)",
+      "preparado": false
+     },
+     {
+      "nombre": "Conjuro 30 (nivel 6)",
+      "preparado": true
+     }
+    ]
+   },
+   "7": {
+    "total": 0,
+    "usados": 0,
+    "lista": []
+   },
+   "8": {
+    "total": 0,
+    "usados": 0,
+    "lista": []
+   },
+   "9": {
+    "total": 0,
+    "usados": 0,
+    "lista": []
+   }
+  }
+ },
+ "notas": "Sesión 1: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 2: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 3: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 4: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 6: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 7: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 8: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 9: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 11: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 12: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 13: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 14: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 16: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 17: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 18: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 19: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 21: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 22: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 23: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 24: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 26: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 27: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 28: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 29: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 31: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 32: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 33: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 34: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 36: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 37: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 38: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 39: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 41: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 42: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 43: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 44: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 46: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 47: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 48: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 49: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 51: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 52: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 53: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 54: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 56: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 57: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 58: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 59: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 61: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 62: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 63: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 64: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 66: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 67: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 68: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 69: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 71: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 72: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 73: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 74: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 76: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 77: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 78: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 79: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 81: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 82: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 83: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 84: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 86: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 87: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 88: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 89: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 91: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 92: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 93: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 94: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 96: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 97: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 98: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 99: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 101: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 102: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 103: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 104: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 106: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 107: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 108: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 109: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 111: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 112: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 113: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 114: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 116: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 117: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 118: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 119: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 121: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 122: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 123: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 124: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 126: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 127: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 128: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 129: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 131: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 132: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 133: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 134: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 136: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 137: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 138: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 139: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 141: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 142: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 143: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 144: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 146: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 147: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 148: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 149: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 151: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 152: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 153: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 154: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 156: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 157: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 158: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 159: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 161: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 162: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 163: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 164: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 166: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 167: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 168: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 169: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 171: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 172: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 173: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 174: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 176: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 177: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 178: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 179: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 181: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 182: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 183: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 184: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 186: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 187: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 188: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 189: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 191: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 192: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 193: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 194: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 196: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 197: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 198: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 199: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 201: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 202: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 203: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 204: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 206: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 207: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 208: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 209: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 211: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 212: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 213: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 214: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 216: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 217: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 218: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 219: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\n\nSesión 221: el grupo exploró la cripta, habló con el posadero y descubrió una pista sobre el anillo. ñandú áéíóú\nSesión 222: el grupo exploró la cripta, hab"
+}

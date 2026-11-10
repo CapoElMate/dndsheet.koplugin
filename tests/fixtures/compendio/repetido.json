@@ -1,0 +1,9 @@
+{
+ "spells": [
+  { "id": "spell.fire-bolt", "name": "Fire Bolt (regla de la casa)", "level": 0, "school": "Evocation",
+    "casting_time": "Action", "range": "120 feet", "components": "V, S", "duration": "Instantaneous",
+    "classes": ["Wizard"], "text": "Versión propia de prueba." },
+  { "id": "spell.sin-texto", "name": "Sin texto", "level": 2 }
+ ],
+ "weapons": [ { "id": "weapon.incompleta", "name": "Incompleta" } ]
+}

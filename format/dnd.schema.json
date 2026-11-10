@@ -1,0 +1,1110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/capoelmate/dndsheet.koplugin/blob/main/format/dnd.schema.json",
+  "title": "dndsheet character file (.dnd), schema 3",
+  "description": "Describe un archivo .dnd COMPLETO y ya migrado a schema 3 (lo que escribe dndsheet). Las claves desconocidas se permiten y se conservan. Para leer archivos incompletos o de versiones anteriores, aplicá primero las migraciones y la normalización (docs/FORMATO-DND.md).",
+  "type": "object",
+  "properties": {
+    "meta": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "const": 3,
+          "description": "versión del formato"
+        },
+        "app": {
+          "type": "string"
+        },
+        "creado": {
+          "type": "integer",
+          "description": "Unix time"
+        },
+        "guardado": {
+          "type": "integer",
+          "description": "Unix time"
+        }
+      },
+      "required": [
+        "schema"
+      ]
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "clase_nivel": {
+      "type": "string",
+      "description": "texto libre: «Rogue 5», «Fighter 3 / Wizard 2»"
+    },
+    "nivel": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 20,
+      "description": "nivel total: define el bonificador de competencia"
+    },
+    "trasfondo": {
+      "type": "string"
+    },
+    "jugador": {
+      "type": "string"
+    },
+    "raza": {
+      "type": "string"
+    },
+    "alineamiento": {
+      "type": "string"
+    },
+    "experiencia": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "atributos": {
+      "type": "object",
+      "properties": {
+        "fue": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 30
+        },
+        "des": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 30
+        },
+        "con": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 30
+        },
+        "int": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 30
+        },
+        "sab": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 30
+        },
+        "car": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 30
+        }
+      },
+      "required": [
+        "fue",
+        "des",
+        "con",
+        "int",
+        "sab",
+        "car"
+      ]
+    },
+    "salvaciones": {
+      "type": "object",
+      "properties": {
+        "fue": {
+          "type": "boolean",
+          "description": "competencia en la salvación"
+        },
+        "des": {
+          "type": "boolean",
+          "description": "competencia en la salvación"
+        },
+        "con": {
+          "type": "boolean",
+          "description": "competencia en la salvación"
+        },
+        "int": {
+          "type": "boolean",
+          "description": "competencia en la salvación"
+        },
+        "sab": {
+          "type": "boolean",
+          "description": "competencia en la salvación"
+        },
+        "car": {
+          "type": "boolean",
+          "description": "competencia en la salvación"
+        }
+      },
+      "required": [
+        "fue",
+        "des",
+        "con",
+        "int",
+        "sab",
+        "car"
+      ]
+    },
+    "habilidades": {
+      "type": "object",
+      "properties": {
+        "acrobacias": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "0 sin competencia · 1 competente · 2 pericia"
+        },
+        "trato_animales": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "0 sin competencia · 1 competente · 2 pericia"
+        },
+        "arcanos": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "0 sin competencia · 1 competente · 2 pericia"
+        },
+        "atletismo": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "0 sin competencia · 1 competente · 2 pericia"
+        },
+        "engano": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "0 sin competencia · 1 competente · 2 pericia"
+        },
+        "historia": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "0 sin competencia · 1 competente · 2 pericia"
+        },
+        "perspicacia": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "0 sin competencia · 1 competente · 2 pericia"
+        },
+        "intimidacion": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "0 sin competencia · 1 competente · 2 pericia"
+        },
+        "investigacion": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "0 sin competencia · 1 competente · 2 pericia"
+        },
+        "medicina": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "0 sin competencia · 1 competente · 2 pericia"
+        },
+        "naturaleza": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "0 sin competencia · 1 competente · 2 pericia"
+        },
+        "percepcion": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "0 sin competencia · 1 competente · 2 pericia"
+        },
+        "interpretacion": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "0 sin competencia · 1 competente · 2 pericia"
+        },
+        "persuasion": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "0 sin competencia · 1 competente · 2 pericia"
+        },
+        "religion": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "0 sin competencia · 1 competente · 2 pericia"
+        },
+        "juego_manos": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "0 sin competencia · 1 competente · 2 pericia"
+        },
+        "sigilo": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "0 sin competencia · 1 competente · 2 pericia"
+        },
+        "supervivencia": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "0 sin competencia · 1 competente · 2 pericia"
+        }
+      },
+      "required": [
+        "acrobacias",
+        "trato_animales",
+        "arcanos",
+        "atletismo",
+        "engano",
+        "historia",
+        "perspicacia",
+        "intimidacion",
+        "investigacion",
+        "medicina",
+        "naturaleza",
+        "percepcion",
+        "interpretacion",
+        "persuasion",
+        "religion",
+        "juego_manos",
+        "sigilo",
+        "supervivencia"
+      ]
+    },
+    "inspiracion": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 99
+    },
+    "ca": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "velocidad": {
+      "type": "string",
+      "description": "texto libre: «30 ft», «9 m / fly 18 m»"
+    },
+    "hp": {
+      "type": "object",
+      "properties": {
+        "maximo": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "actual": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "temporal": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "maximo",
+        "actual",
+        "temporal"
+      ]
+    },
+    "dados_golpe": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "string",
+          "description": "«5d8», «3d10+2d8»"
+        },
+        "restantes": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "total",
+        "restantes"
+      ]
+    },
+    "muerte": {
+      "type": "object",
+      "properties": {
+        "exitos": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "fallos": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        }
+      },
+      "required": [
+        "exitos",
+        "fallos"
+      ]
+    },
+    "ajustes": {
+      "type": "object",
+      "properties": {
+        "competencia": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "ajuste manual; null = calcular"
+        },
+        "iniciativa": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "ajuste manual; null = calcular"
+        },
+        "percepcion_pasiva": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "ajuste manual; null = calcular"
+        },
+        "cd_conjuros": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "ajuste manual; null = calcular"
+        },
+        "ataque_conjuros": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "ajuste manual; null = calcular"
+        }
+      },
+      "required": [
+        "competencia",
+        "iniciativa",
+        "percepcion_pasiva",
+        "cd_conjuros",
+        "ataque_conjuros"
+      ]
+    },
+    "ataques": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string"
+          },
+          "bonus": {
+            "type": "string",
+            "description": "texto: «+5»"
+          },
+          "dano": {
+            "type": "string",
+            "description": "texto: «1d8+3 slashing»"
+          },
+          "ref": {
+            "type": "string",
+            "minLength": 1,
+            "description": "id de una entrada del compendio (opcional)"
+          }
+        },
+        "required": [
+          "nombre",
+          "bonus",
+          "dano"
+        ]
+      }
+    },
+    "ataques_notas": {
+      "type": "string"
+    },
+    "monedas": {
+      "type": "object",
+      "properties": {
+        "pc": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "pp": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "pe": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "po": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "ppt": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "pc",
+        "pp",
+        "pe",
+        "po",
+        "ppt"
+      ],
+      "description": "cobre, plata, electro, oro, platino"
+    },
+    "equipo": {
+      "type": "string"
+    },
+    "otras_competencias": {
+      "type": "string"
+    },
+    "rasgos": {
+      "type": "string"
+    },
+    "rasgos_ref": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "nombre": {
+            "type": "string"
+          },
+          "nota": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "ref",
+          "nombre",
+          "nota"
+        ]
+      }
+    },
+    "personalidad": {
+      "type": "object",
+      "properties": {
+        "rasgos": {
+          "type": "string"
+        },
+        "ideales": {
+          "type": "string"
+        },
+        "vinculos": {
+          "type": "string"
+        },
+        "defectos": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "rasgos",
+        "ideales",
+        "vinculos",
+        "defectos"
+      ]
+    },
+    "fisico": {
+      "type": "object",
+      "properties": {
+        "edad": {
+          "type": "string"
+        },
+        "altura": {
+          "type": "string"
+        },
+        "peso": {
+          "type": "string"
+        },
+        "ojos": {
+          "type": "string"
+        },
+        "piel": {
+          "type": "string"
+        },
+        "pelo": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "edad",
+        "altura",
+        "peso",
+        "ojos",
+        "piel",
+        "pelo"
+      ]
+    },
+    "apariencia": {
+      "type": "string"
+    },
+    "aliados": {
+      "type": "string"
+    },
+    "organizacion": {
+      "type": "string"
+    },
+    "rasgos_adicionales": {
+      "type": "string"
+    },
+    "historia": {
+      "type": "string"
+    },
+    "tesoro": {
+      "type": "string"
+    },
+    "conjuros": {
+      "type": "object",
+      "properties": {
+        "clase": {
+          "type": "string"
+        },
+        "aptitud": {
+          "enum": [
+            "int",
+            "sab",
+            "car",
+            null
+          ]
+        },
+        "niveles": {
+          "type": "object",
+          "properties": {
+            "0": {
+              "type": "object",
+              "properties": {
+                "lista": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "nombre": {
+                        "type": "string"
+                      },
+                      "ref": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "id de una entrada del compendio (opcional)"
+                      }
+                    },
+                    "required": [
+                      "nombre"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "lista"
+              ],
+              "description": "trucos: sin ranuras"
+            },
+            "1": {
+              "type": "object",
+              "properties": {
+                "total": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 99,
+                  "description": "ranuras totales"
+                },
+                "usados": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 99,
+                  "description": "ranuras gastadas (<= total)"
+                },
+                "lista": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "nombre": {
+                        "type": "string"
+                      },
+                      "preparado": {
+                        "type": "boolean"
+                      },
+                      "ref": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "id de una entrada del compendio (opcional)"
+                      }
+                    },
+                    "required": [
+                      "nombre",
+                      "preparado"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "total",
+                "usados",
+                "lista"
+              ]
+            },
+            "2": {
+              "type": "object",
+              "properties": {
+                "total": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 99,
+                  "description": "ranuras totales"
+                },
+                "usados": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 99,
+                  "description": "ranuras gastadas (<= total)"
+                },
+                "lista": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "nombre": {
+                        "type": "string"
+                      },
+                      "preparado": {
+                        "type": "boolean"
+                      },
+                      "ref": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "id de una entrada del compendio (opcional)"
+                      }
+                    },
+                    "required": [
+                      "nombre",
+                      "preparado"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "total",
+                "usados",
+                "lista"
+              ]
+            },
+            "3": {
+              "type": "object",
+              "properties": {
+                "total": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 99,
+                  "description": "ranuras totales"
+                },
+                "usados": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 99,
+                  "description": "ranuras gastadas (<= total)"
+                },
+                "lista": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "nombre": {
+                        "type": "string"
+                      },
+                      "preparado": {
+                        "type": "boolean"
+                      },
+                      "ref": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "id de una entrada del compendio (opcional)"
+                      }
+                    },
+                    "required": [
+                      "nombre",
+                      "preparado"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "total",
+                "usados",
+                "lista"
+              ]
+            },
+            "4": {
+              "type": "object",
+              "properties": {
+                "total": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 99,
+                  "description": "ranuras totales"
+                },
+                "usados": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 99,
+                  "description": "ranuras gastadas (<= total)"
+                },
+                "lista": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "nombre": {
+                        "type": "string"
+                      },
+                      "preparado": {
+                        "type": "boolean"
+                      },
+                      "ref": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "id de una entrada del compendio (opcional)"
+                      }
+                    },
+                    "required": [
+                      "nombre",
+                      "preparado"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "total",
+                "usados",
+                "lista"
+              ]
+            },
+            "5": {
+              "type": "object",
+              "properties": {
+                "total": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 99,
+                  "description": "ranuras totales"
+                },
+                "usados": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 99,
+                  "description": "ranuras gastadas (<= total)"
+                },
+                "lista": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "nombre": {
+                        "type": "string"
+                      },
+                      "preparado": {
+                        "type": "boolean"
+                      },
+                      "ref": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "id de una entrada del compendio (opcional)"
+                      }
+                    },
+                    "required": [
+                      "nombre",
+                      "preparado"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "total",
+                "usados",
+                "lista"
+              ]
+            },
+            "6": {
+              "type": "object",
+              "properties": {
+                "total": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 99,
+                  "description": "ranuras totales"
+                },
+                "usados": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 99,
+                  "description": "ranuras gastadas (<= total)"
+                },
+                "lista": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "nombre": {
+                        "type": "string"
+                      },
+                      "preparado": {
+                        "type": "boolean"
+                      },
+                      "ref": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "id de una entrada del compendio (opcional)"
+                      }
+                    },
+                    "required": [
+                      "nombre",
+                      "preparado"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "total",
+                "usados",
+                "lista"
+              ]
+            },
+            "7": {
+              "type": "object",
+              "properties": {
+                "total": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 99,
+                  "description": "ranuras totales"
+                },
+                "usados": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 99,
+                  "description": "ranuras gastadas (<= total)"
+                },
+                "lista": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "nombre": {
+                        "type": "string"
+                      },
+                      "preparado": {
+                        "type": "boolean"
+                      },
+                      "ref": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "id de una entrada del compendio (opcional)"
+                      }
+                    },
+                    "required": [
+                      "nombre",
+                      "preparado"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "total",
+                "usados",
+                "lista"
+              ]
+            },
+            "8": {
+              "type": "object",
+              "properties": {
+                "total": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 99,
+                  "description": "ranuras totales"
+                },
+                "usados": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 99,
+                  "description": "ranuras gastadas (<= total)"
+                },
+                "lista": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "nombre": {
+                        "type": "string"
+                      },
+                      "preparado": {
+                        "type": "boolean"
+                      },
+                      "ref": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "id de una entrada del compendio (opcional)"
+                      }
+                    },
+                    "required": [
+                      "nombre",
+                      "preparado"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "total",
+                "usados",
+                "lista"
+              ]
+            },
+            "9": {
+              "type": "object",
+              "properties": {
+                "total": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 99,
+                  "description": "ranuras totales"
+                },
+                "usados": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 99,
+                  "description": "ranuras gastadas (<= total)"
+                },
+                "lista": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "nombre": {
+                        "type": "string"
+                      },
+                      "preparado": {
+                        "type": "boolean"
+                      },
+                      "ref": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "id de una entrada del compendio (opcional)"
+                      }
+                    },
+                    "required": [
+                      "nombre",
+                      "preparado"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "total",
+                "usados",
+                "lista"
+              ]
+            }
+          },
+          "required": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        }
+      },
+      "required": [
+        "clase",
+        "aptitud",
+        "niveles"
+      ]
+    },
+    "notas": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "meta",
+    "nombre",
+    "clase_nivel",
+    "nivel",
+    "trasfondo",
+    "jugador",
+    "raza",
+    "alineamiento",
+    "experiencia",
+    "atributos",
+    "salvaciones",
+    "habilidades",
+    "inspiracion",
+    "ca",
+    "velocidad",
+    "hp",
+    "dados_golpe",
+    "muerte",
+    "ajustes",
+    "ataques",
+    "ataques_notas",
+    "monedas",
+    "equipo",
+    "otras_competencias",
+    "rasgos",
+    "rasgos_ref",
+    "personalidad",
+    "fisico",
+    "apariencia",
+    "aliados",
+    "organizacion",
+    "rasgos_adicionales",
+    "historia",
+    "tesoro",
+    "conjuros",
+    "notas"
+  ],
+  "additionalProperties": true
+}

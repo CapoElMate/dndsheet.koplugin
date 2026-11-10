@@ -1,0 +1,31 @@
+name: Release
+on:
+  push:
+    tags: ["v*"]
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install tools
+        run: sudo apt-get update && sudo apt-get install -y luajit luarocks lua-cjson && sudo luarocks install luacheck
+      - name: Check that the tag matches the version
+        run: |
+          VERSION="$(sed -n 's/^return "\(.*\)"$/\1/p' dndsheet/version.lua)"
+          [ "v$VERSION" = "${GITHUB_REF_NAME%%-rc*}" ] || { echo "tag $GITHUB_REF_NAME != version $VERSION"; exit 1; }
+      - name: Build
+        run: ./empaquetar.sh
+      - name: Release notes from CHANGELOG
+        run: |
+          VERSION="$(sed -n 's/^return "\(.*\)"$/\1/p' dndsheet/version.lua)"
+          awk -v v="$VERSION" 'index($0, "## [" v "]") == 1 {p=1; next} /^## \[/ {p=0} p' CHANGELOG.md > RELEASE_NOTES.md
+          [ -s RELEASE_NOTES.md ] || { echo "CHANGELOG has no section for $VERSION"; exit 1; }
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          PRE=""
+          case "$GITHUB_REF_NAME" in *-rc*|*beta*|v0.*) PRE="--prerelease" ;; esac
+          gh release create "$GITHUB_REF_NAME" dndsheet-*.zip SHA256SUMS $PRE --title "$GITHUB_REF_NAME" --notes-file RELEASE_NOTES.md

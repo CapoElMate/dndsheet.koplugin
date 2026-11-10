@@ -1,0 +1,10 @@
+fuentes/
+tmp/
+personajes/
+capturas/
+*.dnd.bak
+*.tmp
+__pycache__/
+dndsheet-*.zip
+SHA256SUMS
+RELEASE_NOTES.md

@@ -1,0 +1,11 @@
+{
+  "nombre": 42, "nivel": "7", "ca": "15",
+  "atributos": { "fue": "16", "des": 99, "con": -3, "int": null, "sab": "x" },
+  "habilidades": { "sigilo": 5, "acrobacias": 2 },
+  "muerte": { "exitos": 1, "fallos": 7 },
+  "hp": { "maximo": -4, "actual": "12", "temporal": null },
+  "ajustes": { "iniciativa": "3", "competencia": "mucho" },
+  "ataques": [ { "nombre": "Espada" }, 5, null ],
+  "conjuros": { "aptitud": "fue", "niveles": { "1": { "total": 3, "usados": 5, "lista": [ { "nombre": "Dormir", "preparado": "si" } ] } } },
+  "homebrew": { "x": [1, 2, 3] }
+}

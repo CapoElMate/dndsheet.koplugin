@@ -1,0 +1,1303 @@
+{
+ "description": "Entrada: .dnd parcial. Cada implementación lo pasa por normalize() y compara los derivados. `spell_dc` y `spell_atk` son null cuando no hay aptitud ni ajuste manual.",
+ "mods": [
+  {
+   "score": 1,
+   "mod": -5
+  },
+  {
+   "score": 2,
+   "mod": -4
+  },
+  {
+   "score": 3,
+   "mod": -4
+  },
+  {
+   "score": 8,
+   "mod": -1
+  },
+  {
+   "score": 9,
+   "mod": -1
+  },
+  {
+   "score": 10,
+   "mod": 0
+  },
+  {
+   "score": 11,
+   "mod": 0
+  },
+  {
+   "score": 12,
+   "mod": 1
+  },
+  {
+   "score": 13,
+   "mod": 1
+  },
+  {
+   "score": 15,
+   "mod": 2
+  },
+  {
+   "score": 18,
+   "mod": 4
+  },
+  {
+   "score": 20,
+   "mod": 5
+  },
+  {
+   "score": 29,
+   "mod": 9
+  },
+  {
+   "score": 30,
+   "mod": 10
+  }
+ ],
+ "cases": [
+  {
+   "name": "Thalia nivel 5 sin lanzamiento de conjuros",
+   "input": {
+    "nivel": 5,
+    "atributos": {
+     "fue": 8,
+     "des": 18,
+     "con": 14,
+     "int": 12,
+     "sab": 13,
+     "car": 14
+    },
+    "salvaciones": {
+     "des": true,
+     "int": true
+    },
+    "habilidades": {
+     "acrobacias": 1,
+     "engano": 2,
+     "percepcion": 1,
+     "sigilo": 2
+    },
+    "hp": {
+     "maximo": 38,
+     "actual": 27,
+     "temporal": 5
+    },
+    "dados_golpe": {
+     "total": "5d8",
+     "restantes": 3
+    }
+   },
+   "expect": {
+    "prof": 3,
+    "mod": {
+     "fue": -1,
+     "des": 4,
+     "con": 2,
+     "int": 1,
+     "sab": 1,
+     "car": 2
+    },
+    "save": {
+     "fue": -1,
+     "des": 7,
+     "con": 2,
+     "int": 4,
+     "sab": 1,
+     "car": 2
+    },
+    "skill": {
+     "acrobacias": 7,
+     "trato_animales": 1,
+     "arcanos": 1,
+     "atletismo": -1,
+     "engano": 8,
+     "historia": 1,
+     "perspicacia": 1,
+     "intimidacion": 2,
+     "investigacion": 1,
+     "medicina": 1,
+     "naturaleza": 1,
+     "percepcion": 4,
+     "interpretacion": 2,
+     "persuasion": 2,
+     "religion": 1,
+     "juego_manos": 4,
+     "sigilo": 10,
+     "supervivencia": 1
+    },
+    "initiative": 4,
+    "passive": 14,
+    "spell_dc": null,
+    "spell_atk": null
+   },
+   "note": "Thalia: personaje de referencia de las pruebas"
+  },
+  {
+   "name": "Thalia con aptitud INT",
+   "input": {
+    "nivel": 5,
+    "atributos": {
+     "fue": 8,
+     "des": 18,
+     "con": 14,
+     "int": 12,
+     "sab": 13,
+     "car": 14
+    },
+    "salvaciones": {
+     "des": true,
+     "int": true
+    },
+    "habilidades": {
+     "acrobacias": 1,
+     "engano": 2,
+     "percepcion": 1,
+     "sigilo": 2
+    },
+    "hp": {
+     "maximo": 38,
+     "actual": 27,
+     "temporal": 5
+    },
+    "dados_golpe": {
+     "total": "5d8",
+     "restantes": 3
+    },
+    "conjuros": {
+     "aptitud": "int"
+    }
+   },
+   "expect": {
+    "prof": 3,
+    "mod": {
+     "fue": -1,
+     "des": 4,
+     "con": 2,
+     "int": 1,
+     "sab": 1,
+     "car": 2
+    },
+    "save": {
+     "fue": -1,
+     "des": 7,
+     "con": 2,
+     "int": 4,
+     "sab": 1,
+     "car": 2
+    },
+    "skill": {
+     "acrobacias": 7,
+     "trato_animales": 1,
+     "arcanos": 1,
+     "atletismo": -1,
+     "engano": 8,
+     "historia": 1,
+     "perspicacia": 1,
+     "intimidacion": 2,
+     "investigacion": 1,
+     "medicina": 1,
+     "naturaleza": 1,
+     "percepcion": 4,
+     "interpretacion": 2,
+     "persuasion": 2,
+     "religion": 1,
+     "juego_manos": 4,
+     "sigilo": 10,
+     "supervivencia": 1
+    },
+    "initiative": 4,
+    "passive": 14,
+    "spell_dc": 12,
+    "spell_atk": 4
+   }
+  },
+  {
+   "name": "Thalia con aptitud CAR",
+   "input": {
+    "nivel": 5,
+    "atributos": {
+     "fue": 8,
+     "des": 18,
+     "con": 14,
+     "int": 12,
+     "sab": 13,
+     "car": 14
+    },
+    "salvaciones": {
+     "des": true,
+     "int": true
+    },
+    "habilidades": {
+     "acrobacias": 1,
+     "engano": 2,
+     "percepcion": 1,
+     "sigilo": 2
+    },
+    "hp": {
+     "maximo": 38,
+     "actual": 27,
+     "temporal": 5
+    },
+    "dados_golpe": {
+     "total": "5d8",
+     "restantes": 3
+    },
+    "conjuros": {
+     "aptitud": "car"
+    }
+   },
+   "expect": {
+    "prof": 3,
+    "mod": {
+     "fue": -1,
+     "des": 4,
+     "con": 2,
+     "int": 1,
+     "sab": 1,
+     "car": 2
+    },
+    "save": {
+     "fue": -1,
+     "des": 7,
+     "con": 2,
+     "int": 4,
+     "sab": 1,
+     "car": 2
+    },
+    "skill": {
+     "acrobacias": 7,
+     "trato_animales": 1,
+     "arcanos": 1,
+     "atletismo": -1,
+     "engano": 8,
+     "historia": 1,
+     "perspicacia": 1,
+     "intimidacion": 2,
+     "investigacion": 1,
+     "medicina": 1,
+     "naturaleza": 1,
+     "percepcion": 4,
+     "interpretacion": 2,
+     "persuasion": 2,
+     "religion": 1,
+     "juego_manos": 4,
+     "sigilo": 10,
+     "supervivencia": 1
+    },
+    "initiative": 4,
+    "passive": 14,
+    "spell_dc": 13,
+    "spell_atk": 5
+   }
+  },
+  {
+   "name": "Thalia con aptitud SAB",
+   "input": {
+    "nivel": 5,
+    "atributos": {
+     "fue": 8,
+     "des": 18,
+     "con": 14,
+     "int": 12,
+     "sab": 13,
+     "car": 14
+    },
+    "salvaciones": {
+     "des": true,
+     "int": true
+    },
+    "habilidades": {
+     "acrobacias": 1,
+     "engano": 2,
+     "percepcion": 1,
+     "sigilo": 2
+    },
+    "hp": {
+     "maximo": 38,
+     "actual": 27,
+     "temporal": 5
+    },
+    "dados_golpe": {
+     "total": "5d8",
+     "restantes": 3
+    },
+    "conjuros": {
+     "aptitud": "sab"
+    }
+   },
+   "expect": {
+    "prof": 3,
+    "mod": {
+     "fue": -1,
+     "des": 4,
+     "con": 2,
+     "int": 1,
+     "sab": 1,
+     "car": 2
+    },
+    "save": {
+     "fue": -1,
+     "des": 7,
+     "con": 2,
+     "int": 4,
+     "sab": 1,
+     "car": 2
+    },
+    "skill": {
+     "acrobacias": 7,
+     "trato_animales": 1,
+     "arcanos": 1,
+     "atletismo": -1,
+     "engano": 8,
+     "historia": 1,
+     "perspicacia": 1,
+     "intimidacion": 2,
+     "investigacion": 1,
+     "medicina": 1,
+     "naturaleza": 1,
+     "percepcion": 4,
+     "interpretacion": 2,
+     "persuasion": 2,
+     "religion": 1,
+     "juego_manos": 4,
+     "sigilo": 10,
+     "supervivencia": 1
+    },
+    "initiative": 4,
+    "passive": 14,
+    "spell_dc": 12,
+    "spell_atk": 4
+   }
+  },
+  {
+   "name": "Thalia con ajustes manuales",
+   "input": {
+    "nivel": 5,
+    "atributos": {
+     "fue": 8,
+     "des": 18,
+     "con": 14,
+     "int": 12,
+     "sab": 13,
+     "car": 14
+    },
+    "salvaciones": {
+     "des": true,
+     "int": true
+    },
+    "habilidades": {
+     "acrobacias": 1,
+     "engano": 2,
+     "percepcion": 1,
+     "sigilo": 2
+    },
+    "hp": {
+     "maximo": 38,
+     "actual": 27,
+     "temporal": 5
+    },
+    "dados_golpe": {
+     "total": "5d8",
+     "restantes": 3
+    },
+    "conjuros": {
+     "aptitud": "int"
+    },
+    "ajustes": {
+     "competencia": 4,
+     "iniciativa": 9,
+     "percepcion_pasiva": 20,
+     "cd_conjuros": 15,
+     "ataque_conjuros": 7
+    }
+   },
+   "expect": {
+    "prof": 4,
+    "mod": {
+     "fue": -1,
+     "des": 4,
+     "con": 2,
+     "int": 1,
+     "sab": 1,
+     "car": 2
+    },
+    "save": {
+     "fue": -1,
+     "des": 8,
+     "con": 2,
+     "int": 5,
+     "sab": 1,
+     "car": 2
+    },
+    "skill": {
+     "acrobacias": 8,
+     "trato_animales": 1,
+     "arcanos": 1,
+     "atletismo": -1,
+     "engano": 10,
+     "historia": 1,
+     "perspicacia": 1,
+     "intimidacion": 2,
+     "investigacion": 1,
+     "medicina": 1,
+     "naturaleza": 1,
+     "percepcion": 5,
+     "interpretacion": 2,
+     "persuasion": 2,
+     "religion": 1,
+     "juego_manos": 4,
+     "sigilo": 12,
+     "supervivencia": 1
+    },
+    "initiative": 9,
+    "passive": 20,
+    "spell_dc": 15,
+    "spell_atk": 7
+   }
+  },
+  {
+   "name": "Personaje vacío (todo por defecto)",
+   "input": {},
+   "expect": {
+    "prof": 2,
+    "mod": {
+     "fue": 0,
+     "des": 0,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "save": {
+     "fue": 0,
+     "des": 0,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "skill": {
+     "acrobacias": 0,
+     "trato_animales": 0,
+     "arcanos": 0,
+     "atletismo": 0,
+     "engano": 0,
+     "historia": 0,
+     "perspicacia": 0,
+     "intimidacion": 0,
+     "investigacion": 0,
+     "medicina": 0,
+     "naturaleza": 0,
+     "percepcion": 0,
+     "interpretacion": 0,
+     "persuasion": 0,
+     "religion": 0,
+     "juego_manos": 0,
+     "sigilo": 0,
+     "supervivencia": 0
+    },
+    "initiative": 0,
+    "passive": 10,
+    "spell_dc": null,
+    "spell_atk": null
+   }
+  },
+  {
+   "name": "Nivel 1, atributos 8",
+   "input": {
+    "nivel": 1,
+    "atributos": {
+     "fue": 8,
+     "des": 8,
+     "con": 8,
+     "int": 8,
+     "sab": 8,
+     "car": 8
+    }
+   },
+   "expect": {
+    "prof": 2,
+    "mod": {
+     "fue": -1,
+     "des": -1,
+     "con": -1,
+     "int": -1,
+     "sab": -1,
+     "car": -1
+    },
+    "save": {
+     "fue": -1,
+     "des": -1,
+     "con": -1,
+     "int": -1,
+     "sab": -1,
+     "car": -1
+    },
+    "skill": {
+     "acrobacias": -1,
+     "trato_animales": -1,
+     "arcanos": -1,
+     "atletismo": -1,
+     "engano": -1,
+     "historia": -1,
+     "perspicacia": -1,
+     "intimidacion": -1,
+     "investigacion": -1,
+     "medicina": -1,
+     "naturaleza": -1,
+     "percepcion": -1,
+     "interpretacion": -1,
+     "persuasion": -1,
+     "religion": -1,
+     "juego_manos": -1,
+     "sigilo": -1,
+     "supervivencia": -1
+    },
+    "initiative": -1,
+    "passive": 9,
+    "spell_dc": null,
+    "spell_atk": null
+   }
+  },
+  {
+   "name": "Nivel 20, atributos 30 y pericia en todo",
+   "input": {
+    "nivel": 20,
+    "atributos": {
+     "fue": 30,
+     "des": 30,
+     "con": 30,
+     "int": 30,
+     "sab": 30,
+     "car": 30
+    },
+    "salvaciones": {
+     "fue": true,
+     "des": true,
+     "con": true,
+     "int": true,
+     "sab": true,
+     "car": true
+    },
+    "habilidades": {
+     "acrobacias": 2,
+     "trato_animales": 2,
+     "arcanos": 2,
+     "atletismo": 2,
+     "engano": 2,
+     "historia": 2,
+     "perspicacia": 2,
+     "intimidacion": 2,
+     "investigacion": 2,
+     "medicina": 2,
+     "naturaleza": 2,
+     "percepcion": 2,
+     "interpretacion": 2,
+     "persuasion": 2,
+     "religion": 2,
+     "juego_manos": 2,
+     "sigilo": 2,
+     "supervivencia": 2
+    },
+    "conjuros": {
+     "aptitud": "sab"
+    }
+   },
+   "expect": {
+    "prof": 6,
+    "mod": {
+     "fue": 10,
+     "des": 10,
+     "con": 10,
+     "int": 10,
+     "sab": 10,
+     "car": 10
+    },
+    "save": {
+     "fue": 16,
+     "des": 16,
+     "con": 16,
+     "int": 16,
+     "sab": 16,
+     "car": 16
+    },
+    "skill": {
+     "acrobacias": 22,
+     "trato_animales": 22,
+     "arcanos": 22,
+     "atletismo": 22,
+     "engano": 22,
+     "historia": 22,
+     "perspicacia": 22,
+     "intimidacion": 22,
+     "investigacion": 22,
+     "medicina": 22,
+     "naturaleza": 22,
+     "percepcion": 22,
+     "interpretacion": 22,
+     "persuasion": 22,
+     "religion": 22,
+     "juego_manos": 22,
+     "sigilo": 22,
+     "supervivencia": 22
+    },
+    "initiative": 10,
+    "passive": 32,
+    "spell_dc": 24,
+    "spell_atk": 16
+   }
+  },
+  {
+   "name": "Atributos fuera de rango se acotan a 1-30",
+   "input": {
+    "atributos": {
+     "fue": 99,
+     "des": -5,
+     "con": 0
+    }
+   },
+   "expect": {
+    "prof": 2,
+    "mod": {
+     "fue": 10,
+     "des": -5,
+     "con": -5,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "save": {
+     "fue": 10,
+     "des": -5,
+     "con": -5,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "skill": {
+     "acrobacias": -5,
+     "trato_animales": 0,
+     "arcanos": 0,
+     "atletismo": 10,
+     "engano": 0,
+     "historia": 0,
+     "perspicacia": 0,
+     "intimidacion": 0,
+     "investigacion": 0,
+     "medicina": 0,
+     "naturaleza": 0,
+     "percepcion": 0,
+     "interpretacion": 0,
+     "persuasion": 0,
+     "religion": 0,
+     "juego_manos": -5,
+     "sigilo": -5,
+     "supervivencia": 0
+    },
+    "initiative": -5,
+    "passive": 10,
+    "spell_dc": null,
+    "spell_atk": null
+   }
+  },
+  {
+   "name": "Nivel fuera de rango se acota a 1-20",
+   "input": {
+    "nivel": 99
+   },
+   "expect": {
+    "prof": 6,
+    "mod": {
+     "fue": 0,
+     "des": 0,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "save": {
+     "fue": 0,
+     "des": 0,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "skill": {
+     "acrobacias": 0,
+     "trato_animales": 0,
+     "arcanos": 0,
+     "atletismo": 0,
+     "engano": 0,
+     "historia": 0,
+     "perspicacia": 0,
+     "intimidacion": 0,
+     "investigacion": 0,
+     "medicina": 0,
+     "naturaleza": 0,
+     "percepcion": 0,
+     "interpretacion": 0,
+     "persuasion": 0,
+     "religion": 0,
+     "juego_manos": 0,
+     "sigilo": 0,
+     "supervivencia": 0
+    },
+    "initiative": 0,
+    "passive": 10,
+    "spell_dc": null,
+    "spell_atk": null
+   }
+  },
+  {
+   "name": "Nivel 0 se acota a 1",
+   "input": {
+    "nivel": 0
+   },
+   "expect": {
+    "prof": 2,
+    "mod": {
+     "fue": 0,
+     "des": 0,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "save": {
+     "fue": 0,
+     "des": 0,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "skill": {
+     "acrobacias": 0,
+     "trato_animales": 0,
+     "arcanos": 0,
+     "atletismo": 0,
+     "engano": 0,
+     "historia": 0,
+     "perspicacia": 0,
+     "intimidacion": 0,
+     "investigacion": 0,
+     "medicina": 0,
+     "naturaleza": 0,
+     "percepcion": 0,
+     "interpretacion": 0,
+     "persuasion": 0,
+     "religion": 0,
+     "juego_manos": 0,
+     "sigilo": 0,
+     "supervivencia": 0
+    },
+    "initiative": 0,
+    "passive": 10,
+    "spell_dc": null,
+    "spell_atk": null
+   }
+  },
+  {
+   "name": "Habilidad con valor inválido cuenta como 0",
+   "input": {
+    "nivel": 9,
+    "habilidades": {
+     "sigilo": 7,
+     "atletismo": 1
+    },
+    "atributos": {
+     "fue": 14,
+     "des": 12
+    }
+   },
+   "expect": {
+    "prof": 4,
+    "mod": {
+     "fue": 2,
+     "des": 1,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "save": {
+     "fue": 2,
+     "des": 1,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "skill": {
+     "acrobacias": 1,
+     "trato_animales": 0,
+     "arcanos": 0,
+     "atletismo": 6,
+     "engano": 0,
+     "historia": 0,
+     "perspicacia": 0,
+     "intimidacion": 0,
+     "investigacion": 0,
+     "medicina": 0,
+     "naturaleza": 0,
+     "percepcion": 0,
+     "interpretacion": 0,
+     "persuasion": 0,
+     "religion": 0,
+     "juego_manos": 1,
+     "sigilo": 1,
+     "supervivencia": 0
+    },
+    "initiative": 1,
+    "passive": 10,
+    "spell_dc": null,
+    "spell_atk": null
+   }
+  },
+  {
+   "name": "Competencia en el nivel 4",
+   "input": {
+    "nivel": 4,
+    "salvaciones": {
+     "fue": true
+    },
+    "atributos": {
+     "fue": 16
+    }
+   },
+   "expect": {
+    "prof": 2,
+    "mod": {
+     "fue": 3,
+     "des": 0,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "save": {
+     "fue": 5,
+     "des": 0,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "skill": {
+     "acrobacias": 0,
+     "trato_animales": 0,
+     "arcanos": 0,
+     "atletismo": 3,
+     "engano": 0,
+     "historia": 0,
+     "perspicacia": 0,
+     "intimidacion": 0,
+     "investigacion": 0,
+     "medicina": 0,
+     "naturaleza": 0,
+     "percepcion": 0,
+     "interpretacion": 0,
+     "persuasion": 0,
+     "religion": 0,
+     "juego_manos": 0,
+     "sigilo": 0,
+     "supervivencia": 0
+    },
+    "initiative": 0,
+    "passive": 10,
+    "spell_dc": null,
+    "spell_atk": null
+   }
+  },
+  {
+   "name": "Competencia en el nivel 5",
+   "input": {
+    "nivel": 5,
+    "salvaciones": {
+     "fue": true
+    },
+    "atributos": {
+     "fue": 16
+    }
+   },
+   "expect": {
+    "prof": 3,
+    "mod": {
+     "fue": 3,
+     "des": 0,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "save": {
+     "fue": 6,
+     "des": 0,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "skill": {
+     "acrobacias": 0,
+     "trato_animales": 0,
+     "arcanos": 0,
+     "atletismo": 3,
+     "engano": 0,
+     "historia": 0,
+     "perspicacia": 0,
+     "intimidacion": 0,
+     "investigacion": 0,
+     "medicina": 0,
+     "naturaleza": 0,
+     "percepcion": 0,
+     "interpretacion": 0,
+     "persuasion": 0,
+     "religion": 0,
+     "juego_manos": 0,
+     "sigilo": 0,
+     "supervivencia": 0
+    },
+    "initiative": 0,
+    "passive": 10,
+    "spell_dc": null,
+    "spell_atk": null
+   }
+  },
+  {
+   "name": "Competencia en el nivel 8",
+   "input": {
+    "nivel": 8,
+    "salvaciones": {
+     "fue": true
+    },
+    "atributos": {
+     "fue": 16
+    }
+   },
+   "expect": {
+    "prof": 3,
+    "mod": {
+     "fue": 3,
+     "des": 0,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "save": {
+     "fue": 6,
+     "des": 0,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "skill": {
+     "acrobacias": 0,
+     "trato_animales": 0,
+     "arcanos": 0,
+     "atletismo": 3,
+     "engano": 0,
+     "historia": 0,
+     "perspicacia": 0,
+     "intimidacion": 0,
+     "investigacion": 0,
+     "medicina": 0,
+     "naturaleza": 0,
+     "percepcion": 0,
+     "interpretacion": 0,
+     "persuasion": 0,
+     "religion": 0,
+     "juego_manos": 0,
+     "sigilo": 0,
+     "supervivencia": 0
+    },
+    "initiative": 0,
+    "passive": 10,
+    "spell_dc": null,
+    "spell_atk": null
+   }
+  },
+  {
+   "name": "Competencia en el nivel 9",
+   "input": {
+    "nivel": 9,
+    "salvaciones": {
+     "fue": true
+    },
+    "atributos": {
+     "fue": 16
+    }
+   },
+   "expect": {
+    "prof": 4,
+    "mod": {
+     "fue": 3,
+     "des": 0,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "save": {
+     "fue": 7,
+     "des": 0,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "skill": {
+     "acrobacias": 0,
+     "trato_animales": 0,
+     "arcanos": 0,
+     "atletismo": 3,
+     "engano": 0,
+     "historia": 0,
+     "perspicacia": 0,
+     "intimidacion": 0,
+     "investigacion": 0,
+     "medicina": 0,
+     "naturaleza": 0,
+     "percepcion": 0,
+     "interpretacion": 0,
+     "persuasion": 0,
+     "religion": 0,
+     "juego_manos": 0,
+     "sigilo": 0,
+     "supervivencia": 0
+    },
+    "initiative": 0,
+    "passive": 10,
+    "spell_dc": null,
+    "spell_atk": null
+   }
+  },
+  {
+   "name": "Competencia en el nivel 12",
+   "input": {
+    "nivel": 12,
+    "salvaciones": {
+     "fue": true
+    },
+    "atributos": {
+     "fue": 16
+    }
+   },
+   "expect": {
+    "prof": 4,
+    "mod": {
+     "fue": 3,
+     "des": 0,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "save": {
+     "fue": 7,
+     "des": 0,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "skill": {
+     "acrobacias": 0,
+     "trato_animales": 0,
+     "arcanos": 0,
+     "atletismo": 3,
+     "engano": 0,
+     "historia": 0,
+     "perspicacia": 0,
+     "intimidacion": 0,
+     "investigacion": 0,
+     "medicina": 0,
+     "naturaleza": 0,
+     "percepcion": 0,
+     "interpretacion": 0,
+     "persuasion": 0,
+     "religion": 0,
+     "juego_manos": 0,
+     "sigilo": 0,
+     "supervivencia": 0
+    },
+    "initiative": 0,
+    "passive": 10,
+    "spell_dc": null,
+    "spell_atk": null
+   }
+  },
+  {
+   "name": "Competencia en el nivel 13",
+   "input": {
+    "nivel": 13,
+    "salvaciones": {
+     "fue": true
+    },
+    "atributos": {
+     "fue": 16
+    }
+   },
+   "expect": {
+    "prof": 5,
+    "mod": {
+     "fue": 3,
+     "des": 0,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "save": {
+     "fue": 8,
+     "des": 0,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "skill": {
+     "acrobacias": 0,
+     "trato_animales": 0,
+     "arcanos": 0,
+     "atletismo": 3,
+     "engano": 0,
+     "historia": 0,
+     "perspicacia": 0,
+     "intimidacion": 0,
+     "investigacion": 0,
+     "medicina": 0,
+     "naturaleza": 0,
+     "percepcion": 0,
+     "interpretacion": 0,
+     "persuasion": 0,
+     "religion": 0,
+     "juego_manos": 0,
+     "sigilo": 0,
+     "supervivencia": 0
+    },
+    "initiative": 0,
+    "passive": 10,
+    "spell_dc": null,
+    "spell_atk": null
+   }
+  },
+  {
+   "name": "Competencia en el nivel 16",
+   "input": {
+    "nivel": 16,
+    "salvaciones": {
+     "fue": true
+    },
+    "atributos": {
+     "fue": 16
+    }
+   },
+   "expect": {
+    "prof": 5,
+    "mod": {
+     "fue": 3,
+     "des": 0,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "save": {
+     "fue": 8,
+     "des": 0,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "skill": {
+     "acrobacias": 0,
+     "trato_animales": 0,
+     "arcanos": 0,
+     "atletismo": 3,
+     "engano": 0,
+     "historia": 0,
+     "perspicacia": 0,
+     "intimidacion": 0,
+     "investigacion": 0,
+     "medicina": 0,
+     "naturaleza": 0,
+     "percepcion": 0,
+     "interpretacion": 0,
+     "persuasion": 0,
+     "religion": 0,
+     "juego_manos": 0,
+     "sigilo": 0,
+     "supervivencia": 0
+    },
+    "initiative": 0,
+    "passive": 10,
+    "spell_dc": null,
+    "spell_atk": null
+   }
+  },
+  {
+   "name": "Competencia en el nivel 17",
+   "input": {
+    "nivel": 17,
+    "salvaciones": {
+     "fue": true
+    },
+    "atributos": {
+     "fue": 16
+    }
+   },
+   "expect": {
+    "prof": 6,
+    "mod": {
+     "fue": 3,
+     "des": 0,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "save": {
+     "fue": 9,
+     "des": 0,
+     "con": 0,
+     "int": 0,
+     "sab": 0,
+     "car": 0
+    },
+    "skill": {
+     "acrobacias": 0,
+     "trato_animales": 0,
+     "arcanos": 0,
+     "atletismo": 3,
+     "engano": 0,
+     "historia": 0,
+     "perspicacia": 0,
+     "intimidacion": 0,
+     "investigacion": 0,
+     "medicina": 0,
+     "naturaleza": 0,
+     "percepcion": 0,
+     "interpretacion": 0,
+     "persuasion": 0,
+     "religion": 0,
+     "juego_manos": 0,
+     "sigilo": 0,
+     "supervivencia": 0
+    },
+    "initiative": 0,
+    "passive": 10,
+    "spell_dc": null,
+    "spell_atk": null
+   }
+  }
+ ]
+}
