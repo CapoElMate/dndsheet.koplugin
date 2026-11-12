@@ -6,7 +6,7 @@ require("stubs")
 -- Las aserciones de test_store buscan textos en español: se fija el idioma (el predeterminado sería el inglés).
 require("dndsheet/i18n").set_language("es")
 
-local files = { "test_rules", "test_schema", "test_store", "test_i18n", "test_dice", "test_compendium", "test_release", "test_vectors" }
+local files = { "test_rules", "test_schema", "test_store", "test_i18n", "test_dice", "test_compendium", "test_release", "test_vectors", "test_catalogo" }
 local pass, fail = 0, 0
 for _, f in ipairs(files) do
     local suite = require(f)

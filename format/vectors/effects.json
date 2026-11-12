@@ -1,0 +1,138 @@
+{
+  "_doc": "Vectores del bloque `efectos` de las entradas propias (ver docs/PAQUETES.md). Cada caso: input = personaje parcial, efectos = lista ya reunida, expect = solo las claves que se comprueban. Todo lo que el plugin todavía no calcula (F-10) lo calcula la web. Los valores se calcularon a mano.",
+  "cases": [
+    {
+      "name": "bonos numéricos suman",
+      "input": { "nivel": 5, "atributos": { "des": 16 }, "ca": 15, "hp": { "maximo": 38, "actual": 38 } },
+      "efectos": [
+        { "tipo": "bono", "a": "ca", "valor": 1 },
+        { "tipo": "bono", "a": "ca", "valor": 1 },
+        { "tipo": "bono", "a": "ataque", "valor": 1 },
+        { "tipo": "bono", "a": "dano", "valor": 2 },
+        { "tipo": "bono", "a": "iniciativa", "valor": 2 },
+        { "tipo": "bono", "a": "velocidad", "valor": 10 },
+        { "tipo": "bono", "a": "pg_por_nivel", "valor": 2 }
+      ],
+      "expect": { "ca": 17, "ataque_bonus": 1, "dano_bonus": 2, "iniciativa": 5, "velocidad_bonus": 10, "pg_maximo": 48, "ignorados": 0 }
+    },
+    {
+      "name": "competencias y pericia",
+      "input": { "nivel": 1, "atributos": { "des": 14, "sab": 12 } },
+      "efectos": [
+        { "tipo": "competencia", "categoria": "habilidad", "valor": "sigilo" },
+        { "tipo": "competencia", "categoria": "salvacion", "valor": "sab" },
+        { "tipo": "competencia", "categoria": "arma", "valor": "martial" },
+        { "tipo": "competencia", "categoria": "herramienta", "valor": "thieves' tools" },
+        { "tipo": "pericia", "habilidad": "percepcion" }
+      ],
+      "expect": {
+        "skill": { "sigilo": 4, "percepcion": 5, "acrobacias": 2 },
+        "save": { "sab": 3, "des": 2 },
+        "passive": 15,
+        "competencias": { "arma": ["martial"], "armadura": [], "herramienta": ["thieves' tools"] },
+        "ignorados": 0
+      }
+    },
+    {
+      "name": "aumentos de atributo con tope",
+      "input": { "nivel": 4, "atributos": { "fue": 19, "des": 20, "con": 10, "sab": 28 } },
+      "efectos": [
+        { "tipo": "aumento_atributo", "atributo": "fue", "valor": 2 },
+        { "tipo": "aumento_atributo", "atributo": "des", "valor": 1 },
+        { "tipo": "aumento_atributo", "atributo": "con", "valor": 1 },
+        { "tipo": "aumento_atributo", "atributo": "sab", "valor": 2, "maximo": 30 }
+      ],
+      "expect": { "atributos": { "fue": 20, "des": 20, "con": 11, "sab": 30 }, "mod": { "con": 0, "sab": 10 }, "ignorados": 0 }
+    },
+    {
+      "name": "recursos con usos fijos y fórmulas",
+      "input": { "nivel": 9, "atributos": { "sab": 18, "fue": 8 } },
+      "efectos": [
+        { "tipo": "recurso", "nombre": "Prof uses", "formula": "prof", "descanso": "corto" },
+        { "tipo": "recurso", "nombre": "Wisdom uses", "formula": "mod:sab", "descanso": "largo" },
+        { "tipo": "recurso", "nombre": "Weak uses", "formula": "mod:fue", "descanso": "largo" },
+        { "tipo": "recurso", "nombre": "Level uses", "formula": "nivel", "descanso": "largo" },
+        { "tipo": "recurso", "nombre": "Fixed uses", "usos": 3, "descanso": "corto" }
+      ],
+      "expect": {
+        "recursos": [
+          { "nombre": "Prof uses", "usos": 4, "descanso": "corto" },
+          { "nombre": "Wisdom uses", "usos": 4, "descanso": "largo" },
+          { "nombre": "Weak uses", "usos": 1, "descanso": "largo" },
+          { "nombre": "Level uses", "usos": 9, "descanso": "largo" },
+          { "nombre": "Fixed uses", "usos": 3, "descanso": "corto" }
+        ],
+        "ignorados": 0
+      }
+    },
+    {
+      "name": "sentidos, resistencias y conjuros siempre preparados",
+      "input": { "nivel": 3 },
+      "efectos": [
+        { "tipo": "sentido", "sentido": "darkvision", "alcance": 60 },
+        { "tipo": "sentido", "sentido": "darkvision", "alcance": 120 },
+        { "tipo": "sentido", "sentido": "blindsight", "alcance": 10 },
+        { "tipo": "resistencia", "dano": "fire" },
+        { "tipo": "resistencia", "dano": "fire" },
+        { "tipo": "resistencia", "dano": "cold" },
+        { "tipo": "conjuro_preparado", "conjuro": "spell.shield" },
+        { "tipo": "conjuro_preparado", "conjuro": "spell.shield" },
+        { "tipo": "conjuro_preparado", "conjuro": "spell.bless" }
+      ],
+      "expect": {
+        "sentidos": { "darkvision": 120, "blindsight": 10 },
+        "resistencias": ["cold", "fire"],
+        "preparados": ["spell.bless", "spell.shield"],
+        "ignorados": 0
+      }
+    },
+    {
+      "name": "efectos inválidos se ignoran sin tocar nada",
+      "input": { "nivel": 2, "ca": 12, "atributos": { "des": 14 } },
+      "efectos": [
+        { "tipo": "magia" },
+        { "tipo": "bono", "a": "suerte", "valor": 1 },
+        { "tipo": "bono", "a": "ca", "valor": "mucho" },
+        { "tipo": "competencia", "categoria": "habilidad", "valor": "nada" },
+        { "tipo": "aumento_atributo", "atributo": "xxx", "valor": 1 },
+        { "tipo": "recurso", "nombre": "x", "usos": 1, "descanso": "siempre" },
+        "texto"
+      ],
+      "expect": { "ca": 12, "iniciativa": 2, "skill": { "sigilo": 2 }, "recursos": [], "ignorados": 7 }
+    },
+    {
+      "name": "lanzador completo nivel 5",
+      "input": { "nivel": 5 },
+      "efectos": [{ "tipo": "lanzador", "progresion": "completo" }],
+      "expect": { "ranuras": { "1": 4, "2": 3, "3": 2 }, "ignorados": 0 }
+    },
+    {
+      "name": "lanzador medio nivel 5",
+      "input": { "nivel": 5 },
+      "efectos": [{ "tipo": "lanzador", "progresion": "medio" }],
+      "expect": { "ranuras": { "1": 4, "2": 2 }, "ignorados": 0 }
+    },
+    {
+      "name": "lanzador de pacto nivel 5",
+      "input": { "nivel": 5 },
+      "efectos": [{ "tipo": "lanzador", "progresion": "pacto" }],
+      "expect": { "ranuras": { "3": 2 }, "ignorados": 0 }
+    }
+  ],
+  "collect": [
+    {
+      "name": "los rasgos de subclase aplican desde su nivel",
+      "entries": [
+        {
+          "id": "subclass.invented-order", "class_id": "fighter", "name": "Invented Order",
+          "efectos": [{ "tipo": "bono", "a": "ca", "valor": 1 }],
+          "features": [
+            { "id": "subclass.invented-order.a", "name": "A", "level": 3, "text": "t", "efectos": [{ "tipo": "bono", "a": "iniciativa", "valor": 1 }] },
+            { "id": "subclass.invented-order.b", "name": "B", "level": 7, "text": "t", "efectos": [{ "tipo": "competencia", "categoria": "habilidad", "valor": "sigilo" }, { "tipo": "bono", "a": "ataque", "valor": 1 }] }
+          ]
+        }
+      ],
+      "expect_count": { "1": 1, "2": 1, "3": 2, "6": 2, "7": 4, "20": 4 }
+    }
+  ]
+}

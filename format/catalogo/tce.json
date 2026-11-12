@@ -1,0 +1,515 @@
+{
+ "libro": "Tasha's Cauldron of Everything",
+ "fuente": "TCE",
+ "edicion": "2014",
+ "subclasses": [
+  {
+   "nombre": "Alchemist",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Artificer",
+   "nivel": 3
+  },
+  {
+   "nombre": "Armorer",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Artificer",
+   "nivel": 3
+  },
+  {
+   "nombre": "Artillerist",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Artificer",
+   "nivel": 3
+  },
+  {
+   "nombre": "Battle Smith",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Artificer",
+   "nivel": 3
+  },
+  {
+   "nombre": "Path of the Beast",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Barbarian",
+   "nivel": 3
+  },
+  {
+   "nombre": "Path of Wild Magic",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Barbarian",
+   "nivel": 3
+  },
+  {
+   "nombre": "College of Creation",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Bard",
+   "nivel": 3
+  },
+  {
+   "nombre": "College of Eloquence",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Bard",
+   "nivel": 3
+  },
+  {
+   "nombre": "Order Domain",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Cleric",
+   "nivel": 1
+  },
+  {
+   "nombre": "Peace Domain",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Cleric",
+   "nivel": 1
+  },
+  {
+   "nombre": "Twilight Domain",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Cleric",
+   "nivel": 1
+  },
+  {
+   "nombre": "Circle of Spores",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Druid",
+   "nivel": 2
+  },
+  {
+   "nombre": "Circle of Stars",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Druid",
+   "nivel": 2
+  },
+  {
+   "nombre": "Circle of Wildfire",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Druid",
+   "nivel": 2
+  },
+  {
+   "nombre": "Psi Warrior",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Fighter",
+   "nivel": 3
+  },
+  {
+   "nombre": "Rune Knight",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Fighter",
+   "nivel": 3
+  },
+  {
+   "nombre": "Way of Mercy",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Monk",
+   "nivel": 3
+  },
+  {
+   "nombre": "Way of the Astral Self",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Monk",
+   "nivel": 3
+  },
+  {
+   "nombre": "Oath of Glory",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Paladin",
+   "nivel": 3
+  },
+  {
+   "nombre": "Oath of the Watchers",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Paladin",
+   "nivel": 3
+  },
+  {
+   "nombre": "Fey Wanderer",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Ranger",
+   "nivel": 3
+  },
+  {
+   "nombre": "Swarmkeeper",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Ranger",
+   "nivel": 3
+  },
+  {
+   "nombre": "Phantom",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Rogue",
+   "nivel": 3
+  },
+  {
+   "nombre": "Soulknife",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Rogue",
+   "nivel": 3
+  },
+  {
+   "nombre": "Aberrant Mind",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Sorcerer",
+   "nivel": 1
+  },
+  {
+   "nombre": "Clockwork Soul",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Sorcerer",
+   "nivel": 1
+  },
+  {
+   "nombre": "The Fathomless",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Warlock",
+   "nivel": 1
+  },
+  {
+   "nombre": "The Genie",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Warlock",
+   "nivel": 1
+  },
+  {
+   "nombre": "Bladesinging",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Wizard",
+   "nivel": 2
+  },
+  {
+   "nombre": "Order of Scribes",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "clase": "Wizard",
+   "nivel": 2
+  }
+ ],
+ "species": [],
+ "spells": [
+  {
+   "nombre": "Booming Blade",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "nivel": 0,
+   "escuela": "Evocation",
+   "clases": [
+    "Artificer",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Green-Flame Blade",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "nivel": 0,
+   "escuela": "Evocation",
+   "clases": [
+    "Artificer",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Lightning Lure",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "nivel": 0,
+   "escuela": "Evocation",
+   "clases": [
+    "Artificer",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Mind Sliver",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "nivel": 0,
+   "escuela": "Enchantment",
+   "clases": [
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Sword Burst",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "nivel": 0,
+   "escuela": "Conjuration",
+   "clases": [
+    "Artificer",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Tasha's Caustic Brew",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "nivel": 1,
+   "escuela": "Evocation",
+   "clases": [
+    "Artificer",
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Summon Beast",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "nivel": 2,
+   "escuela": "Conjuration",
+   "clases": [
+    "Druid",
+    "Ranger"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Tasha's Mind Whip",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "nivel": 2,
+   "escuela": "Enchantment",
+   "clases": [
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Intellect Fortress",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Abjuration",
+   "clases": [
+    "Artificer",
+    "Bard",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Spirit Shroud",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Necromancy",
+   "clases": [
+    "Cleric",
+    "Paladin",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Summon Fey",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Conjuration",
+   "clases": [
+    "Druid",
+    "Ranger",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Summon Shadowspawn",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Conjuration",
+   "clases": [
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Summon Undead",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Necromancy",
+   "clases": [
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Summon Aberration",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "nivel": 4,
+   "escuela": "Conjuration",
+   "clases": [
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Summon Construct",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "nivel": 4,
+   "escuela": "Conjuration",
+   "clases": [
+    "Artificer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Summon Elemental",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "nivel": 4,
+   "escuela": "Conjuration",
+   "clases": [
+    "Druid",
+    "Ranger",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Summon Celestial",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "nivel": 5,
+   "escuela": "Conjuration",
+   "clases": [
+    "Cleric",
+    "Paladin"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Summon Fiend",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "nivel": 6,
+   "escuela": "Conjuration",
+   "clases": [
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Tasha's Otherworldly Guise",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "nivel": 6,
+   "escuela": "Transmutation",
+   "clases": [
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Dream of the Blue Veil",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "nivel": 7,
+   "escuela": "Conjuration",
+   "clases": [
+    "Bard",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Blade of Disaster",
+   "fuente": "TCE",
+   "edicion": "2014",
+   "nivel": 9,
+   "escuela": "Conjuration",
+   "clases": [
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  }
+ ]
+}

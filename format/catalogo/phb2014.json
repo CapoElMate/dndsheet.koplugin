@@ -1,0 +1,582 @@
+{
+ "libro": "Player's Handbook (2014)",
+ "fuente": "PHB",
+ "edicion": "2014",
+ "subclasses": [
+  {
+   "nombre": "Path of the Totem Warrior",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Barbarian",
+   "nivel": 3
+  },
+  {
+   "nombre": "College of Valor",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Bard",
+   "nivel": 3
+  },
+  {
+   "nombre": "Knowledge Domain",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Cleric",
+   "nivel": 1
+  },
+  {
+   "nombre": "Light Domain",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Cleric",
+   "nivel": 1
+  },
+  {
+   "nombre": "Nature Domain",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Cleric",
+   "nivel": 1
+  },
+  {
+   "nombre": "Tempest Domain",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Cleric",
+   "nivel": 1
+  },
+  {
+   "nombre": "Trickery Domain",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Cleric",
+   "nivel": 1
+  },
+  {
+   "nombre": "War Domain",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Cleric",
+   "nivel": 1
+  },
+  {
+   "nombre": "Circle of the Moon",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Druid",
+   "nivel": 2
+  },
+  {
+   "nombre": "Battle Master",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Fighter",
+   "nivel": 3
+  },
+  {
+   "nombre": "Eldritch Knight",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Fighter",
+   "nivel": 3
+  },
+  {
+   "nombre": "Way of Shadow",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Monk",
+   "nivel": 3
+  },
+  {
+   "nombre": "Way of the Four Elements",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Monk",
+   "nivel": 3
+  },
+  {
+   "nombre": "Oath of the Ancients",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Paladin",
+   "nivel": 3
+  },
+  {
+   "nombre": "Oath of Vengeance",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Paladin",
+   "nivel": 3
+  },
+  {
+   "nombre": "Beast Master",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Ranger",
+   "nivel": 3
+  },
+  {
+   "nombre": "Assassin",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Rogue",
+   "nivel": 3
+  },
+  {
+   "nombre": "Arcane Trickster",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Rogue",
+   "nivel": 3
+  },
+  {
+   "nombre": "Wild Magic",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Sorcerer",
+   "nivel": 1
+  },
+  {
+   "nombre": "The Archfey",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Warlock",
+   "nivel": 1
+  },
+  {
+   "nombre": "The Great Old One",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Warlock",
+   "nivel": 1
+  },
+  {
+   "nombre": "School of Abjuration",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Wizard",
+   "nivel": 2
+  },
+  {
+   "nombre": "School of Conjuration",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Wizard",
+   "nivel": 2
+  },
+  {
+   "nombre": "School of Divination",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Wizard",
+   "nivel": 2
+  },
+  {
+   "nombre": "School of Enchantment",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Wizard",
+   "nivel": 2
+  },
+  {
+   "nombre": "School of Illusion",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Wizard",
+   "nivel": 2
+  },
+  {
+   "nombre": "School of Necromancy",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Wizard",
+   "nivel": 2
+  },
+  {
+   "nombre": "School of Transmutation",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "clase": "Wizard",
+   "nivel": 2
+  }
+ ],
+ "species": [
+  {
+   "nombre": "Half-Elf",
+   "fuente": "PHB",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Half-Orc",
+   "fuente": "PHB",
+   "edicion": "2014"
+  }
+ ],
+ "spells": [
+  {
+   "nombre": "Blade Ward",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 0,
+   "escuela": "Abjuration",
+   "clases": [
+    "Bard",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Friends",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 0,
+   "escuela": "Enchantment",
+   "clases": [
+    "Bard",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Thorn Whip",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 0,
+   "escuela": "Transmutation",
+   "clases": [
+    "Druid"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Armor of Agathys",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 1,
+   "escuela": "Abjuration",
+   "clases": [
+    "Warlock"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Arms of Hadar",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 1,
+   "escuela": "Conjuration",
+   "clases": [
+    "Warlock"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Compelled Duel",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 1,
+   "escuela": "Enchantment",
+   "clases": [
+    "Paladin"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Hail of Thorns",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 1,
+   "escuela": "Conjuration",
+   "clases": [
+    "Ranger"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Thunderous Smite",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 1,
+   "escuela": "Evocation",
+   "clases": [
+    "Paladin"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Beast Sense",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 2,
+   "escuela": "Divination",
+   "clases": [
+    "Druid",
+    "Ranger"
+   ],
+   "ritual": true,
+   "concentracion": true
+  },
+  {
+   "nombre": "Branding Smite",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 2,
+   "escuela": "Evocation",
+   "clases": [
+    "Paladin"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Cloud of Daggers",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 2,
+   "escuela": "Conjuration",
+   "clases": [
+    "Bard",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Cordon of Arrows",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 2,
+   "escuela": "Transmutation",
+   "clases": [
+    "Ranger"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Crown of Madness",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 2,
+   "escuela": "Enchantment",
+   "clases": [
+    "Bard",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Aura of Vitality",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Evocation",
+   "clases": [
+    "Paladin"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Blinding Smite",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Evocation",
+   "clases": [
+    "Paladin"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Conjure Barrage",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Conjuration",
+   "clases": [
+    "Ranger"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Crusader's Mantle",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Evocation",
+   "clases": [
+    "Paladin"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Elemental Weapon",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Transmutation",
+   "clases": [
+    "Paladin"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Feign Death",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Necromancy",
+   "clases": [
+    "Bard",
+    "Cleric",
+    "Druid",
+    "Wizard"
+   ],
+   "ritual": true,
+   "concentracion": false
+  },
+  {
+   "nombre": "Hunger of Hadar",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Conjuration",
+   "clases": [
+    "Warlock"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Lightning Arrow",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Transmutation",
+   "clases": [
+    "Ranger"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Aura of Purity",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 4,
+   "escuela": "Abjuration",
+   "clases": [
+    "Paladin"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Grasping Vine",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 4,
+   "escuela": "Conjuration",
+   "clases": [
+    "Druid",
+    "Ranger"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Staggering Smite",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 4,
+   "escuela": "Evocation",
+   "clases": [
+    "Paladin"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Banishing Smite",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 5,
+   "escuela": "Abjuration",
+   "clases": [
+    "Paladin"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Circle of Power",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 5,
+   "escuela": "Abjuration",
+   "clases": [
+    "Paladin"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Conjure Volley",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 5,
+   "escuela": "Conjuration",
+   "clases": [
+    "Ranger"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Destructive Wave",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 5,
+   "escuela": "Evocation",
+   "clases": [
+    "Paladin"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Swift Quiver",
+   "fuente": "PHB",
+   "edicion": "2014",
+   "nivel": 5,
+   "escuela": "Transmutation",
+   "clases": [
+    "Ranger"
+   ],
+   "ritual": false,
+   "concentracion": true
+  }
+ ]
+}

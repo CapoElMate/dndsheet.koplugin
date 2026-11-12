@@ -351,4 +351,16 @@ function T.plantilla_propia_es_valida_y_se_carga()
     os.execute("rm -rf /tmp/dnd_plantilla_prueba")
 end
 
+-- F-10 todavía no calcula `efectos`: una entrada que los trae (incluso mal formados) se acepta y se ignoran
+function T.efectos_se_ignoran_sin_error()
+    local e = {
+        id = "custom.subclass.x", class_id = "fighter", name = "X",
+        features = { { id = "custom.subclass.x.a", name = "A", level = 3, text = "t",
+                       efectos = { { tipo = "bono", a = "ca", valor = 1 }, { tipo = "magia" } } } },
+        efectos = { { tipo = "recurso", nombre = "R", usos = 2, descanso = "corto" } },
+    }
+    local ok, why = Compendium.validate("subclasses", e)
+    assert(ok, tostring(why))
+end
+
 return T

@@ -1,0 +1,164 @@
+{
+ "libro": "Mordenkainen Presents: Monsters of the Multiverse",
+ "fuente": "MotM",
+ "edicion": "2014",
+ "subclasses": [],
+ "species": [
+  {
+   "nombre": "Aarakocra",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Aasimar",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Bugbear",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Centaur",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Changeling",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Deep Gnome",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Duergar",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Eladrin",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Fairy",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Firbolg",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Genasi, Air",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Genasi, Earth",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Genasi, Fire",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Genasi, Water",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Githyanki",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Githzerai",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Goblin",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Harengon",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Hobgoblin",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Kenku",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Kobold",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Lizardfolk",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Minotaur",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Satyr",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Sea Elf",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Shadar-kai",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Shifter",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Tabaxi",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Tortle",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Triton",
+   "fuente": "MotM",
+   "edicion": "2014"
+  },
+  {
+   "nombre": "Yuan-ti",
+   "fuente": "MotM",
+   "edicion": "2014"
+  }
+ ],
+ "spells": []
+}

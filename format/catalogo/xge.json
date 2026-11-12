@@ -1,0 +1,1419 @@
+{
+ "libro": "Xanathar's Guide to Everything",
+ "fuente": "XGE",
+ "edicion": "2014",
+ "subclasses": [
+  {
+   "nombre": "Path of the Ancestral Guardian",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Barbarian",
+   "nivel": 3
+  },
+  {
+   "nombre": "Path of the Storm Herald",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Barbarian",
+   "nivel": 3
+  },
+  {
+   "nombre": "Path of the Zealot",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Barbarian",
+   "nivel": 3
+  },
+  {
+   "nombre": "College of Glamour",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Bard",
+   "nivel": 3
+  },
+  {
+   "nombre": "College of Swords",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Bard",
+   "nivel": 3
+  },
+  {
+   "nombre": "College of Whispers",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Bard",
+   "nivel": 3
+  },
+  {
+   "nombre": "Forge Domain",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Cleric",
+   "nivel": 1
+  },
+  {
+   "nombre": "Grave Domain",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Cleric",
+   "nivel": 1
+  },
+  {
+   "nombre": "Circle of Dreams",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Druid",
+   "nivel": 2
+  },
+  {
+   "nombre": "Circle of the Shepherd",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Druid",
+   "nivel": 2
+  },
+  {
+   "nombre": "Arcane Archer",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Fighter",
+   "nivel": 3
+  },
+  {
+   "nombre": "Cavalier",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Fighter",
+   "nivel": 3
+  },
+  {
+   "nombre": "Samurai",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Fighter",
+   "nivel": 3
+  },
+  {
+   "nombre": "Way of the Drunken Master",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Monk",
+   "nivel": 3
+  },
+  {
+   "nombre": "Way of the Kensei",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Monk",
+   "nivel": 3
+  },
+  {
+   "nombre": "Way of the Sun Soul",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Monk",
+   "nivel": 3
+  },
+  {
+   "nombre": "Oath of Conquest",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Paladin",
+   "nivel": 3
+  },
+  {
+   "nombre": "Oath of Redemption",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Paladin",
+   "nivel": 3
+  },
+  {
+   "nombre": "Gloom Stalker",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Ranger",
+   "nivel": 3
+  },
+  {
+   "nombre": "Horizon Walker",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Ranger",
+   "nivel": 3
+  },
+  {
+   "nombre": "Monster Slayer",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Ranger",
+   "nivel": 3
+  },
+  {
+   "nombre": "Inquisitive",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Rogue",
+   "nivel": 3
+  },
+  {
+   "nombre": "Mastermind",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Rogue",
+   "nivel": 3
+  },
+  {
+   "nombre": "Scout",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Rogue",
+   "nivel": 3
+  },
+  {
+   "nombre": "Swashbuckler",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Rogue",
+   "nivel": 3
+  },
+  {
+   "nombre": "Divine Soul",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Sorcerer",
+   "nivel": 1
+  },
+  {
+   "nombre": "Shadow Magic",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Sorcerer",
+   "nivel": 1
+  },
+  {
+   "nombre": "Storm Sorcery",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Sorcerer",
+   "nivel": 1
+  },
+  {
+   "nombre": "The Celestial",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Warlock",
+   "nivel": 1
+  },
+  {
+   "nombre": "The Hexblade",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Warlock",
+   "nivel": 1
+  },
+  {
+   "nombre": "War Magic",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "clase": "Wizard",
+   "nivel": 2
+  }
+ ],
+ "species": [],
+ "spells": [
+  {
+   "nombre": "Control Flames",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 0,
+   "escuela": "Transmutation",
+   "clases": [
+    "Druid",
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Create Bonfire",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 0,
+   "escuela": "Conjuration",
+   "clases": [
+    "Druid",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Frostbite",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 0,
+   "escuela": "Evocation",
+   "clases": [
+    "Druid",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Gust",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 0,
+   "escuela": "Transmutation",
+   "clases": [
+    "Druid",
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Infestation",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 0,
+   "escuela": "Conjuration",
+   "clases": [
+    "Druid",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Magic Stone",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 0,
+   "escuela": "Transmutation",
+   "clases": [
+    "Druid",
+    "Warlock"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Mold Earth",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 0,
+   "escuela": "Transmutation",
+   "clases": [
+    "Druid",
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Primal Savagery",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 0,
+   "escuela": "Transmutation",
+   "clases": [
+    "Druid"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Shape Water",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 0,
+   "escuela": "Transmutation",
+   "clases": [
+    "Druid",
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Thunderclap",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 0,
+   "escuela": "Evocation",
+   "clases": [
+    "Bard",
+    "Druid",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Toll the Dead",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 0,
+   "escuela": "Necromancy",
+   "clases": [
+    "Cleric",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Word of Radiance",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 0,
+   "escuela": "Evocation",
+   "clases": [
+    "Cleric"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Absorb Elements",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 1,
+   "escuela": "Abjuration",
+   "clases": [
+    "Druid",
+    "Ranger",
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Beast Bond",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 1,
+   "escuela": "Divination",
+   "clases": [
+    "Druid",
+    "Ranger"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Catapult",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 1,
+   "escuela": "Transmutation",
+   "clases": [
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Cause Fear",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 1,
+   "escuela": "Necromancy",
+   "clases": [
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Ceremony",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 1,
+   "escuela": "Abjuration",
+   "clases": [
+    "Cleric",
+    "Paladin"
+   ],
+   "ritual": true,
+   "concentracion": false
+  },
+  {
+   "nombre": "Chaos Bolt",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 1,
+   "escuela": "Evocation",
+   "clases": [
+    "Sorcerer"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Earth Tremor",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 1,
+   "escuela": "Evocation",
+   "clases": [
+    "Bard",
+    "Druid",
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Snare",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 1,
+   "escuela": "Abjuration",
+   "clases": [
+    "Druid",
+    "Ranger",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Zephyr Strike",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 1,
+   "escuela": "Transmutation",
+   "clases": [
+    "Ranger"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Aganazzar's Scorcher",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 2,
+   "escuela": "Evocation",
+   "clases": [
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Dust Devil",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 2,
+   "escuela": "Conjuration",
+   "clases": [
+    "Druid",
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Earthbind",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 2,
+   "escuela": "Transmutation",
+   "clases": [
+    "Druid",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Healing Spirit",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 2,
+   "escuela": "Conjuration",
+   "clases": [
+    "Druid",
+    "Ranger"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Maximilian's Earthen Grasp",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 2,
+   "escuela": "Transmutation",
+   "clases": [
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Pyrotechnics",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 2,
+   "escuela": "Transmutation",
+   "clases": [
+    "Bard",
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Shadow Blade",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 2,
+   "escuela": "Illusion",
+   "clases": [
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Skywrite",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 2,
+   "escuela": "Transmutation",
+   "clases": [
+    "Bard",
+    "Druid",
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": true,
+   "concentracion": true
+  },
+  {
+   "nombre": "Snilloc's Snowball Swarm",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 2,
+   "escuela": "Evocation",
+   "clases": [
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Warding Wind",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 2,
+   "escuela": "Evocation",
+   "clases": [
+    "Bard",
+    "Druid",
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Catnap",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Enchantment",
+   "clases": [
+    "Bard",
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Enemies Abound",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Enchantment",
+   "clases": [
+    "Bard",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Erupting Earth",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Transmutation",
+   "clases": [
+    "Druid",
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Flame Arrows",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Transmutation",
+   "clases": [
+    "Druid",
+    "Ranger",
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Life Transference",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Necromancy",
+   "clases": [
+    "Cleric",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Melf's Minute Meteors",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Evocation",
+   "clases": [
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Summon Lesser Demons",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Conjuration",
+   "clases": [
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Thunder Step",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Conjuration",
+   "clases": [
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Tidal Wave",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Conjuration",
+   "clases": [
+    "Druid",
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Tiny Servant",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Transmutation",
+   "clases": [
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Wall of Sand",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Evocation",
+   "clases": [
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Wall of Water",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 3,
+   "escuela": "Evocation",
+   "clases": [
+    "Druid",
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Elemental Bane",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 4,
+   "escuela": "Transmutation",
+   "clases": [
+    "Druid",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Guardian of Nature",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 4,
+   "escuela": "Transmutation",
+   "clases": [
+    "Druid",
+    "Ranger"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Shadow of Moil",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 4,
+   "escuela": "Necromancy",
+   "clases": [
+    "Warlock"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Sickening Radiance",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 4,
+   "escuela": "Evocation",
+   "clases": [
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Storm Sphere",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 4,
+   "escuela": "Evocation",
+   "clases": [
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Summon Greater Demon",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 4,
+   "escuela": "Conjuration",
+   "clases": [
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Watery Sphere",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 4,
+   "escuela": "Conjuration",
+   "clases": [
+    "Druid",
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Control Winds",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 5,
+   "escuela": "Transmutation",
+   "clases": [
+    "Druid",
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Danse Macabre",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 5,
+   "escuela": "Necromancy",
+   "clases": [
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Dawn",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 5,
+   "escuela": "Evocation",
+   "clases": [
+    "Cleric",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Enervation",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 5,
+   "escuela": "Necromancy",
+   "clases": [
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Far Step",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 5,
+   "escuela": "Conjuration",
+   "clases": [
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Holy Weapon",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 5,
+   "escuela": "Evocation",
+   "clases": [
+    "Cleric",
+    "Paladin"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Immolation",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 5,
+   "escuela": "Evocation",
+   "clases": [
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Infernal Calling",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 5,
+   "escuela": "Conjuration",
+   "clases": [
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Maelstrom",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 5,
+   "escuela": "Evocation",
+   "clases": [
+    "Druid"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Negative Energy Flood",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 5,
+   "escuela": "Necromancy",
+   "clases": [
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Skill Empowerment",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 5,
+   "escuela": "Transmutation",
+   "clases": [
+    "Bard",
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Steel Wind Strike",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 5,
+   "escuela": "Conjuration",
+   "clases": [
+    "Ranger",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Synaptic Static",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 5,
+   "escuela": "Enchantment",
+   "clases": [
+    "Bard",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Transmute Rock",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 5,
+   "escuela": "Transmutation",
+   "clases": [
+    "Druid",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Wall of Light",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 5,
+   "escuela": "Evocation",
+   "clases": [
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Wrath of Nature",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 5,
+   "escuela": "Evocation",
+   "clases": [
+    "Druid",
+    "Ranger"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Bones of the Earth",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 6,
+   "escuela": "Transmutation",
+   "clases": [
+    "Druid"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Create Homunculus",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 6,
+   "escuela": "Transmutation",
+   "clases": [
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Investiture of Flame",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 6,
+   "escuela": "Transmutation",
+   "clases": [
+    "Druid",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Investiture of Ice",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 6,
+   "escuela": "Transmutation",
+   "clases": [
+    "Druid",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Investiture of Stone",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 6,
+   "escuela": "Transmutation",
+   "clases": [
+    "Druid",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Investiture of Wind",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 6,
+   "escuela": "Transmutation",
+   "clases": [
+    "Druid",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Mental Prison",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 6,
+   "escuela": "Illusion",
+   "clases": [
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Primordial Ward",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 6,
+   "escuela": "Abjuration",
+   "clases": [
+    "Druid"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Scatter",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 6,
+   "escuela": "Conjuration",
+   "clases": [
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Soul Cage",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 6,
+   "escuela": "Necromancy",
+   "clases": [
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Tenser's Transformation",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 6,
+   "escuela": "Transmutation",
+   "clases": [
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Crown of Stars",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 7,
+   "escuela": "Evocation",
+   "clases": [
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Power Word Pain",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 7,
+   "escuela": "Enchantment",
+   "clases": [
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Temple of the Gods",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 7,
+   "escuela": "Conjuration",
+   "clases": [
+    "Cleric"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Whirlwind",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 7,
+   "escuela": "Evocation",
+   "clases": [
+    "Druid",
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Abi-Dalzim's Horrid Wilting",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 8,
+   "escuela": "Necromancy",
+   "clases": [
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Illusory Dragon",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 8,
+   "escuela": "Illusion",
+   "clases": [
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Maddening Darkness",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 8,
+   "escuela": "Evocation",
+   "clases": [
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Mighty Fortress",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 8,
+   "escuela": "Conjuration",
+   "clases": [
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  },
+  {
+   "nombre": "Invulnerability",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 9,
+   "escuela": "Abjuration",
+   "clases": [
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Mass Polymorph",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 9,
+   "escuela": "Transmutation",
+   "clases": [
+    "Bard",
+    "Sorcerer",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": true
+  },
+  {
+   "nombre": "Psychic Scream",
+   "fuente": "XGE",
+   "edicion": "2014",
+   "nivel": 9,
+   "escuela": "Enchantment",
+   "clases": [
+    "Bard",
+    "Sorcerer",
+    "Warlock",
+    "Wizard"
+   ],
+   "ritual": false,
+   "concentracion": false
+  }
+ ]
+}

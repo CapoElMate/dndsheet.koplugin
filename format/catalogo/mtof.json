@@ -1,0 +1,51 @@
+{
+ "libro": "Mordenkainen's Tome of Foes",
+ "fuente": "MToF",
+ "edicion": "2014",
+ "subclasses": [],
+ "species": [
+  {
+   "nombre": "Eladrin",
+   "fuente": "MToF",
+   "edicion": "2014",
+   "reemplazada_por": "Eladrin"
+  },
+  {
+   "nombre": "Sea Elf",
+   "fuente": "MToF",
+   "edicion": "2014",
+   "reemplazada_por": "Sea Elf"
+  },
+  {
+   "nombre": "Shadar-kai",
+   "fuente": "MToF",
+   "edicion": "2014",
+   "reemplazada_por": "Shadar-kai"
+  },
+  {
+   "nombre": "Duergar",
+   "fuente": "MToF",
+   "edicion": "2014",
+   "reemplazada_por": "Duergar"
+  },
+  {
+   "nombre": "Githyanki",
+   "fuente": "MToF",
+   "edicion": "2014",
+   "reemplazada_por": "Githyanki"
+  },
+  {
+   "nombre": "Githzerai",
+   "fuente": "MToF",
+   "edicion": "2014",
+   "reemplazada_por": "Githzerai"
+  },
+  {
+   "nombre": "Deep Gnome",
+   "fuente": "MToF",
+   "edicion": "2014",
+   "reemplazada_por": "Deep Gnome"
+  }
+ ],
+ "spells": []
+}

@@ -8,6 +8,11 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versio
 ### Added
 - Public packaging: `dndsheet-<version>.zip` with a `SHA256SUMS` file, `LICENSE` (AGPL-3.0-or-later), `NOTICE.md`
   with the SRD 5.2.1 attribution, English and Spanish READMEs, and the plugin version shown in *About*.
+- Shared catalog of content that is not in the SRD (`format/catalogo/`): names and catalog data only (book, edition,
+  class and level, spell level and school), no rules text. Used by the character creator on the web.
+- Content packages can carry an optional `efectos` block (proficiencies, bonuses, resources, spellcasting…), documented in
+  `docs/PAQUETES.md` with shared test vectors (`format/vectors/effects.json`). The plugin loads entries with `efectos`
+  and ignores the block for now.
 
 ### Changed
 - The product name is now **dndsheet** ("character sheet compatible with 5e, SRD 5.2.1"). The 5e trademarks are no longer part of the name.
